@@ -3,11 +3,11 @@ import styles from "./1Navbar.module.css";
 
 export default function Navbar() {
   return (
-    <header>
-      <div>
+    <header className={styles.header}>
+      <div className={styles.logo}>
         <h1>Daniela Felix Menezes</h1>
       </div>
-      <nav>
+      <nav className={styles.nav}>
         <ul>
           <li>Home</li>
           <li>E-Books</li>

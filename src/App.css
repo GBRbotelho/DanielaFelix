@@ -4,6 +4,8 @@ html {
   --color3: #4d8057;
   --color4: #000000;
   --factor: 1;
+  --font1: "EB Garamond", serif;
+  --font2: "Roboto", serif;
 }
 
 img {
@@ -13,7 +15,7 @@ img {
 
 body {
   margin: 0;
-  font-family: "EB Garamond", serif;
+  font-family: var(--font1);
 }
 
 body::-webkit-scrollbar {

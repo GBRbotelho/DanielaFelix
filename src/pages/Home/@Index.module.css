@@ -6,3 +6,7 @@
   height: 100vh;
   z-index: -1000;
 }
+
+.div1 {
+  background-image: url("../../assets/imgs/background1.webp");
+}

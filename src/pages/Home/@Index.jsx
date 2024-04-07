@@ -5,7 +5,9 @@ import Navbar from "./1Navbar";
 export default function Index() {
   return (
     <main className={styles.main}>
-      <Navbar />
+      <div className={styles.div1}>
+        <Navbar />
+      </div>
     </main>
   );
 }

@@ -1,0 +1,39 @@
+.section {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  margin: calc(250px * var(--factor)) 0;
+  width: calc(1500px * var(--factor));
+}
+
+.content h1 {
+  color: var(--color1);
+  font-size: calc(65px * var(--factor));
+  width: calc(900px * var(--factor));
+  line-height: 1;
+}
+
+.content span {
+  color: var(--color5);
+}
+
+.content p {
+  margin-top: calc(30px * var(--factor));
+  font-size: calc(28px * var(--factor));
+  color: var(--color1);
+  width: calc(800px * var(--factor));
+  line-height: 1;
+}
+
+.content button {
+  margin-top: calc(30px * var(--factor));
+  background-color: var(--color2);
+  color: var(--color5);
+  font-size: calc(32px * var(--factor));
+  padding: calc(10px * var(--factor)) calc(20px * var(--factor));
+  border-radius: calc(5px * var(--factor));
+}

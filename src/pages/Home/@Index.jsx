@@ -5,6 +5,7 @@ import Section1 from "./Containers/Section1";
 import Section2Sobre from "./Containers/Section2Sobre";
 import Section3Servicos from "./Containers/Section3Servicos";
 import Section4Indicado from "./Containers/Section4Indicado";
+import Section5Dtr from "./Containers/Section5Dtr";
 
 export default function Index() {
   return (
@@ -16,6 +17,7 @@ export default function Index() {
       <Section2Sobre />
       <Section3Servicos />
       <Section4Indicado />
+      <Section5Dtr />
     </main>
   );
 }

@@ -1,0 +1,51 @@
+.section {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font2);
+}
+
+.container {
+  margin: calc(100px * var(--factor)) 0;
+  display: flex;
+  gap: calc(100px * var(--factor));
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(60px * var(--factor));
+  align-items: flex-start;
+}
+
+.content h1 {
+  font-size: calc(55px * var(--factor));
+  color: var(--color4);
+}
+
+.content span {
+  color: var(--color5);
+}
+
+.content p {
+  font-size: calc(34px * var(--factor));
+  font-weight: 300;
+  width: calc(638px * var(--factor));
+}
+
+.content button {
+  background-color: var(--color2);
+  color: var(--color5);
+  font-size: calc(36px * var(--factor));
+  font-weight: 600;
+  padding: calc(15px * var(--factor)) calc(30px * var(--factor));
+  border-radius: calc(16px * var(--factor));
+}
+
+.image {
+  height: calc(850px * var(--factor));
+  width: calc(650px * var(--factor));
+  background-color: var(--color2);
+}

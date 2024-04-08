@@ -1,0 +1,83 @@
+.section {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font2);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h1 {
+  font-size: calc(55px * var(--factor));
+  color: var(--color4);
+}
+
+.title span {
+  color: var(--color5);
+}
+
+.services {
+  margin-top: calc(100px * var(--factor));
+  display: flex;
+  flex-direction: column;
+  gap: calc(100px * var(--factor));
+}
+
+.services1 {
+  display: flex;
+  gap: calc(100px * var(--factor));
+  justify-content: center;
+}
+
+.services2 {
+  display: flex;
+  gap: calc(100px * var(--factor));
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(20px * var(--factor));
+}
+
+.service h2 {
+  font-size: calc(30px * var(--factor));
+  text-align: center;
+}
+
+.service p {
+  font-size: calc(29px * var(--factor));
+  font-weight: 300;
+  width: calc(470px * var(--factor));
+  text-align: center;
+}
+
+.icon {
+  background-color: var(--color2);
+  width: calc(150px * var(--factor));
+  height: calc(150px * var(--factor));
+  border-radius: 50%;
+}
+
+.content button {
+  margin-top: calc(60px * var(--factor));
+  background-color: var(--color2);
+  color: var(--color5);
+  font-size: calc(36px * var(--factor));
+  font-weight: 600;
+  padding: calc(15px * var(--factor)) calc(30px * var(--factor));
+  border-radius: calc(16px * var(--factor));
+}

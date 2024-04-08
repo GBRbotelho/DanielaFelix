@@ -10,11 +10,11 @@
   margin: calc(150px * var(--factor)) 0;
   display: flex;
   align-items: center;
-  gap: calc(150px * var(--factor));
+  gap: calc(100px * var(--factor));
 }
 
 .content h1 {
-  font-size: calc(60px * var(--factor));
+  font-size: calc(55px * var(--factor));
   color: var(--color4);
 }
 
@@ -24,7 +24,7 @@
   color: var(--color5);
   font-size: calc(36px * var(--factor));
   font-weight: 600;
-  padding: calc(15px * var(--factor)) calc(35px * var(--factor));
+  padding: calc(15px * var(--factor)) calc(45px * var(--factor));
   border-radius: calc(10px * var(--factor));
 }
 
@@ -36,12 +36,12 @@
   margin-top: calc(40px * var(--factor));
   color: var(--color4);
   font-size: calc(30px * var(--factor));
-  width: calc(950px * var(--factor));
+  width: calc(960px * var(--factor));
   font-weight: 300;
 }
 
 .image {
-  width: calc(550px * var(--factor));
+  width: calc(680px * var(--factor));
   background-color: var(--color2);
   height: calc(450px * var(--factor));
 }

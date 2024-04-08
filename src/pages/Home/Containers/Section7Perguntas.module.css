@@ -1,0 +1,146 @@
+.section {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font2);
+}
+
+.container {
+  margin: calc(100px * var(--factor)) 0;
+  display: flex;
+  gap: calc(100px * var(--factor));
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(150px * var(--factor));
+}
+
+.promocao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promocao h1 {
+  font-size: calc(42px * var(--factor));
+}
+
+.promocao span {
+  color: var(--color2);
+}
+
+.promocao p {
+  font-size: calc(27px * var(--factor));
+}
+
+.perguntas {
+  display: flex;
+  flex-direction: column;
+}
+
+.perguntas h1 {
+  font-size: calc(42px * var(--factor));
+}
+
+.perguntas ul {
+  display: flex;
+  flex-direction: column;
+  gap: calc(20px * var(--factor));
+}
+
+.perguntas li {
+  background-color: #f4f4f4;
+  padding: calc(15px * var(--factor)) calc(10px * var(--factor));
+  border-radius: calc(8px * var(--factor));
+}
+
+.perguntas p {
+  font-size: calc(27px * var(--factor));
+}
+
+.ebook {
+  width: calc(1100px * var(--factor));
+  height: calc(800px * var(--factor));
+  background: linear-gradient(to right, #285e40, #000000);
+  border-radius: calc(16px * var(--factor));
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cards {
+  width: 80%;
+}
+
+.card {
+  width: 100%;
+  height: calc(700px * var(--factor));
+  border: 0px solid;
+  border-top: calc(20px * var(--factor)) solid var(--color6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  border-radius: calc(12px * var(--factor));
+}
+
+.dataCard {
+  display: flex;
+  margin-top: calc(30px * var(--factor));
+  flex-direction: column;
+  align-items: center;
+  gap: calc(20px * var(--factor));
+}
+
+.iconBook {
+  width: calc(200px * var(--factor));
+  height: calc(200px * var(--factor));
+  background-color: var(--color2);
+}
+
+.dataCard h1 {
+  font-size: calc(43px * var(--factor));
+  text-align: center;
+  line-height: 1;
+}
+
+.dataCard ul {
+  display: flex;
+  flex-direction: column;
+  gap: calc(25px * var(--factor));
+}
+
+.dataCard li {
+  font-size: calc(27px * var(--factor));
+}
+
+.preco {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.preco p {
+  font-size: calc(25px * var(--factor));
+}
+
+.preco del {
+  color: #6bc610;
+  font-weight: 600;
+}
+
+.preco span {
+  font-size: calc(44px * var(--factor));
+  font-weight: 600;
+}
+
+.card button {
+  color: var(--color4);
+  font-size: calc(27px * var(--factor));
+  font-weight: 600;
+  background-color: #6eb122;
+  padding: calc(20px * var(--factor)) 0;
+}

@@ -1,0 +1,104 @@
+.section {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font2);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: calc(100px * var(--factor)) 0;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: calc(50px * var(--factor));
+}
+
+.data h1 {
+  font-size: calc(55px * var(--factor));
+  color: var(--color4);
+  line-height: 1;
+}
+
+.data span {
+  color: var(--color2);
+  font-weight: 400;
+  font-size: calc(35px * var(--factor));
+}
+
+.data p {
+  margin-top: calc(15px * var(--factor));
+  font-weight: 300;
+  font-size: calc(26px * var(--factor));
+  width: calc(430px * var(--factor));
+}
+
+.cards {
+  width: calc(1250px * var(--factor));
+  height: calc(450px * var(--factor));
+}
+
+.card {
+  background-color: #f4f4f4;
+  width: 100%;
+  height: calc(450px * var(--factor));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card p {
+  margin-top: calc(15px * var(--factor));
+  font-weight: 300;
+  font-size: calc(26px * var(--factor));
+  width: 90%;
+}
+
+.dataUser {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  gap: 2%;
+}
+
+.profile {
+  min-width: calc(70px * var(--factor));
+  min-height: calc(70px * var(--factor));
+  max-height: calc(70px * var(--factor));
+  border-radius: 50%;
+  background-color: var(--color2);
+}
+
+.dataProfile h1 {
+  font-size: calc(26px * var(--factor));
+  line-height: 1;
+}
+
+.dataProfile p {
+  margin: 0;
+  font-size: calc(20px * var(--factor));
+  color: var(--color2);
+  font-weight: 600;
+}
+
+.iconUser {
+  background-color: var(--color2);
+  min-width: calc(80px * var(--factor));
+  min-height: calc(80px * var(--factor));
+}
+
+.container button {
+  margin-top: calc(100px * var(--factor));
+  background-color: var(--color2);
+  color: var(--color5);
+  font-size: calc(36px * var(--factor));
+  font-weight: 600;
+  padding: calc(15px * var(--factor)) calc(50px * var(--factor));
+  border-radius: calc(16px * var(--factor));
+}

@@ -60,4 +60,9 @@
   .content p {
     width: 100%;
   }
+
+  .image {
+    width: 90vw;
+    height: 55vw;
+  }
 }

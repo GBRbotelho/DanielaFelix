@@ -1,11 +1,15 @@
 import React from "react";
 import styles from "./Section4Indicado.module.css";
 
+import image from "../../../assets/imgs/home/section4image.webp";
+
 export default function Section4Indicado() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <div className={styles.image}></div>
+        <div className={styles.image}>
+          <img src={image} alt="Imagem Ilustrativa" />
+        </div>
         <div className={styles.content}>
           <h1>
             Pra <span>quem</span> é indicado<span>?</span>

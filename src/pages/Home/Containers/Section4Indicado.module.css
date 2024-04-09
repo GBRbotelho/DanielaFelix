@@ -47,5 +47,25 @@
 .image {
   height: calc(850px * var(--factor));
   width: calc(650px * var(--factor));
-  background-color: var(--color2);
+}
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90vw;
+  }
+
+  .content p {
+    width: 90%;
+  }
+
+  .image {
+    height: 120vw;
+    width: 90vw;
+  }
 }

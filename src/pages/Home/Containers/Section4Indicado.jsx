@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Section4Indicado.module.css";
 
-import image from "../../../assets/imgs/home/section4image.webp";
+import image from "../../../assets/imgs/home/section4Image.webp";
 
 export default function Section4Indicado() {
   return (

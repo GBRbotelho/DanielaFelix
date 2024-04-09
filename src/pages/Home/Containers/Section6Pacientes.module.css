@@ -74,6 +74,18 @@
   border-radius: 50%;
   background-color: var(--color2);
 }
+.stars {
+  position: relative;
+  width: 90%;
+  top: calc(20px * var(--factor));
+  color: #f4b238;
+  display: flex;
+  gap: calc(5px * var(--factor));
+}
+
+.stars svg {
+  width: calc(40px * var(--factor));
+}
 
 .dataProfile h1 {
   font-size: calc(26px * var(--factor));
@@ -88,9 +100,13 @@
 }
 
 .iconUser {
-  background-color: var(--color2);
   min-width: calc(80px * var(--factor));
   min-height: calc(80px * var(--factor));
+}
+
+.iconUser img {
+  width: 70%;
+  height: 40%;
 }
 
 .container button {
@@ -101,4 +117,22 @@
   font-weight: 600;
   padding: calc(15px * var(--factor)) calc(50px * var(--factor));
   border-radius: calc(16px * var(--factor));
+}
+
+@media (max-width: 1050px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .cards {
+    width: calc(834px * var(--factor));
+  }
+}
+
+@media (max-width: 500px) {
+  .cards {
+    width: calc(417px * var(--factor));
+  }
 }

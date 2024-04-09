@@ -20,8 +20,8 @@ export default function Index() {
       <Section3Servicos />
       <Section4Indicado />
       <Section5Dtr />
-      {/* <Section6Pacientes />
-      <Section7Perguntas /> */}
+      <Section6Pacientes />
+      {/* <Section7Perguntas /> */}
     </main>
   );
 }

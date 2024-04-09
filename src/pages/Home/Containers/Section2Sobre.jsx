@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Section2Sobre.module.css";
 
+import img from "../../../assets/imgs/home/imageSection1.webp";
+
 export default function Section2Sobre() {
   return (
     <section className={styles.section}>
@@ -25,7 +27,9 @@ export default function Section2Sobre() {
           </p>
           <button>Agendar uma consulta</button>
         </div>
-        <div className={styles.image}></div>
+        <div className={styles.image}>
+          <img src={img} alt="Ilustração" />
+        </div>
       </div>
     </section>
   );

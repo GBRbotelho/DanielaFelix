@@ -10,7 +10,7 @@
   margin: calc(150px * var(--factor)) 0;
   display: flex;
   align-items: center;
-  gap: calc(100px * var(--factor));
+  gap: calc(50px * var(--factor));
 }
 
 .content h1 {
@@ -42,6 +42,22 @@
 
 .image {
   width: calc(680px * var(--factor));
-  background-color: var(--color2);
   height: calc(450px * var(--factor));
+}
+
+@media (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90vw;
+  }
+
+  .content p {
+    width: 100%;
+  }
 }

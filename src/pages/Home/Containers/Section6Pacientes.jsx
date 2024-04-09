@@ -25,7 +25,7 @@ export default function Section6Pacientes() {
           </div>
           <div className={styles.cards}>
             <Swiper
-              modules={[Autoplay, Pagination]}
+              modules={[Autoplay]}
               spaceBetween="2%"
               slidesPerView={3}
               pagination={{ clickable: true }}

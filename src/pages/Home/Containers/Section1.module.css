@@ -37,4 +37,36 @@
   font-size: calc(32px * var(--factor));
   padding: calc(10px * var(--factor)) calc(20px * var(--factor));
   border-radius: calc(5px * var(--factor));
+  display: flex;
+  gap: calc(10px * var(--factor));
+  align-items: center;
+  transition: 0.2s;
+}
+
+.content button svg {
+  width: calc(40px * var(--factor));
+}
+
+.content button:hover {
+  transform: scale(1.1);
+  background-color: var(--color3);
+  color: var(--color1);
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    width: 90vw;
+  }
+}
+@media (max-width: 700px) {
+  .content h1 {
+    text-wrap: wrap;
+    width: 100%;
+  }
+
+  .content p {
+    width: 100%;
+    text-wrap: wrap;
+  }
 }

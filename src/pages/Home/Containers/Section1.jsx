@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Section1.module.css";
+import Wpp from "../../../components/Home/Wpp";
 
 export default function Section1() {
   return (
@@ -12,7 +13,9 @@ export default function Section1() {
           Explore o Poder das Plantas e da Acupuntura Auricular para Transformar
           sua Saúde e Bem-Estar, onde quer que você esteja!
         </p>
-        <button>Mais informações</button>
+        <button>
+          <Wpp /> Mais informações
+        </button>
       </div>
     </section>
   );

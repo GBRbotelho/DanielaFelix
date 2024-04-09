@@ -1,6 +1,12 @@
 import React from "react";
 import styles from "./Section3Servicos.module.css";
 
+import icon1 from "../../../assets/imgs/home/section3icon1.webp";
+import icon2 from "../../../assets/imgs/home/section3icon2.webp";
+import icon3 from "../../../assets/imgs/home/section3icon3.webp";
+import icon4 from "../../../assets/imgs/home/section3icon4.webp";
+import icon5 from "../../../assets/imgs/home/section3icon5.webp";
+
 export default function Section3Servicos() {
   return (
     <section className={styles.section}>
@@ -13,7 +19,9 @@ export default function Section3Servicos() {
         <div className={styles.services}>
           <div className={styles.services1}>
             <div className={styles.service}>
-              <div className={styles.icon}></div>
+              <div className={styles.icon}>
+                <img src={icon1} alt="Icone Fitoterapia" />
+              </div>
               <h2>
                 Fitoterapia
                 <br />
@@ -25,53 +33,49 @@ export default function Section3Servicos() {
               </p>
             </div>
             <div className={styles.service}>
-              <div className={styles.icon}></div>
-              <h2>
-                Fitoterapia
-                <br />
-                ocidental ou chinesa
-              </h2>
+              <div className={styles.icon}>
+                <img src={icon2} alt="Aromaterapia" />
+              </div>
+              <h2>Aromaterapia</h2>
               <p>
-                Fitoterapia é uma técnica que estuda as funções terapêuticas das
-                plantas e vegetais para prevenção e tratamento de doenças.
+                é uma terapia complementar 100% natural que utiliza óleos
+                essenciais com o objetivo de melhorar o seu bem-estar físico e
+                mental.
               </p>
             </div>
             <div className={styles.service}>
-              <div className={styles.icon}></div>
-              <h2>
-                Fitoterapia
-                <br />
-                ocidental ou chinesa
-              </h2>
+              <div className={styles.icon}>
+                <img src={icon3} alt="Florais de Bach" />
+              </div>
+              <h2>Florais de Bach</h2>
               <p>
-                Fitoterapia é uma técnica que estuda as funções terapêuticas das
-                plantas e vegetais para prevenção e tratamento de doenças.
+                Os florais de Bach são compostos extraídos das flores. São
+                indicados para tratar emoções e ajudar a equilibrar disfunções
+                comportamentais e mentais.
               </p>
             </div>
           </div>
           <div className={styles.services2}>
             <div className={styles.service}>
-              <div className={styles.icon}></div>
-              <h2>
-                Fitoterapia
-                <br />
-                ocidental ou chinesa
-              </h2>
+              <div className={styles.icon}>
+                <img src={icon4} alt="Homeopatia" />
+              </div>
+              <h2>Homeopatia</h2>
               <p>
-                Fitoterapia é uma técnica que estuda as funções terapêuticas das
-                plantas e vegetais para prevenção e tratamento de doenças.
+                atua em diversas situações do adoecimento como nas doenças
+                respiratórias e alérgicas, nos transtornos psicossomáticos,
+                contribuindo para a melhoria de vida dos usuários.
               </p>
             </div>
             <div className={styles.service}>
-              <div className={styles.icon}></div>
-              <h2>
-                Fitoterapia
-                <br />
-                ocidental ou chinesa
-              </h2>
+              <div className={styles.icon}>
+                <img src={icon5} alt="Acupuntura" />
+              </div>
+              <h2>Acupuntura</h2>
               <p>
-                Fitoterapia é uma técnica que estuda as funções terapêuticas das
-                plantas e vegetais para prevenção e tratamento de doenças.
+                Equilibra o corpo, fortalece a imunidade e promove bem-estar
+                físico e mental, reduzindo a necessidade de medicamentos e
+                aumentando a eficácia do tratamento
               </p>
             </div>
           </div>

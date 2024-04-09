@@ -18,10 +18,10 @@ export default function Index() {
       </div>
       <Section2Sobre />
       <Section3Servicos />
-      <Section4Indicado />
+      {/* <Section4Indicado />
       <Section5Dtr />
       <Section6Pacientes />
-      <Section7Perguntas />
+      <Section7Perguntas /> */}
     </main>
   );
 }

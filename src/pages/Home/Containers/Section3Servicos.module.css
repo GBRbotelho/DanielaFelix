@@ -71,6 +71,14 @@
   width: calc(150px * var(--factor));
   height: calc(150px * var(--factor));
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon img {
+  width: 70%;
+  height: 70%;
 }
 
 .content button {
@@ -81,4 +89,26 @@
   font-weight: 600;
   padding: calc(15px * var(--factor)) calc(30px * var(--factor));
   border-radius: calc(16px * var(--factor));
+}
+
+@media (max-width: 1000px) {
+  .services1 {
+    flex-direction: column;
+  }
+
+  .services2 {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .service p {
+    width: 90%;
+  }
 }

@@ -26,6 +26,14 @@
   font-weight: 600;
   padding: calc(15px * var(--factor)) calc(45px * var(--factor));
   border-radius: calc(10px * var(--factor));
+  transition: 0.2s;
+}
+
+.content button:hover {
+  transform: scale(1.1);
+  background-color: var(--color3);
+  color: var(--color1);
+  cursor: pointer;
 }
 
 .content span {

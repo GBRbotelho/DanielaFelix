@@ -117,10 +117,19 @@
   font-weight: 600;
   padding: calc(15px * var(--factor)) calc(50px * var(--factor));
   border-radius: calc(16px * var(--factor));
+  transition: 0.2s;
+}
+
+.container button:hover {
+  transform: scale(1.1);
+  background-color: var(--color3);
+  color: var(--color1);
+  cursor: pointer;
 }
 
 @media (max-width: 1050px) {
   .content {
+    width: 90vw;
     flex-direction: column;
   }
 }

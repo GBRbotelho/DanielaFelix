@@ -26,6 +26,7 @@
 
 .promocao h1 {
   font-size: calc(42px * var(--factor));
+  text-align: center;
 }
 
 .promocao span {
@@ -34,6 +35,7 @@
 
 .promocao p {
   font-size: calc(27px * var(--factor));
+  text-align: center;
 }
 
 .perguntas {
@@ -55,6 +57,18 @@
   background-color: #f4f4f4;
   padding: calc(15px * var(--factor)) calc(10px * var(--factor));
   border-radius: calc(8px * var(--factor));
+  display: flex;
+  justify-content: space-between;
+}
+
+.perguntas li svg {
+  width: calc(27px * var(--factor));
+  transition: 0.2s;
+}
+
+.perguntas li svg:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .perguntas p {
@@ -98,7 +112,6 @@
 .iconBook {
   width: calc(200px * var(--factor));
   height: calc(200px * var(--factor));
-  background-color: var(--color2);
 }
 
 .dataCard h1 {
@@ -115,6 +128,13 @@
 
 .dataCard li {
   font-size: calc(27px * var(--factor));
+  display: flex;
+  align-items: center;
+  gap: calc(8px * var(--factor));
+}
+
+.dataCard li svg {
+  width: calc(27px * var(--factor));
 }
 
 .preco {
@@ -143,4 +163,41 @@
   font-weight: 600;
   background-color: #6eb122;
   padding: calc(20px * var(--factor)) 0;
+  transition: 0.2s;
+}
+
+.card button:hover {
+  color: #6eb122;
+  background-color: var(--color2);
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .cards {
+    width: 50%;
+  }
+
+  .ebook {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .ebook {
+    width: 90vw;
+  }
+
+  .cards {
+    width: 60%;
+  }
+}
+
+@media (max-width: 510px) {
+  .cards {
+    width: 90%;
+  }
 }

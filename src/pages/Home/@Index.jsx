@@ -21,7 +21,7 @@ export default function Index() {
       <Section4Indicado />
       <Section5Dtr />
       <Section6Pacientes />
-      {/* <Section7Perguntas /> */}
+      <Section7Perguntas />
     </main>
   );
 }

@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Section7Perguntas.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import Plus from "../../../components/Home/Plus";
+
+import Book from "../../../assets/imgs/home/section7iconBook.webp";
+import Ok from "../../../components/Home/Ok";
 
 export default function Section7Perguntas() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const handleWindowResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    // Adiciona um ouvinte de evento para redimensionamento da janela
+    window.addEventListener("resize", handleWindowResize);
+  }, []);
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -22,21 +37,27 @@ export default function Section7Perguntas() {
             <ul>
               <li>
                 <p>Comece a aprender ainda hoje</p>
+                <Plus />
               </li>
               <li>
                 <p>Comece a aprender ainda hoje</p>
+                <Plus />
               </li>
               <li>
                 <p>Comece a aprender ainda hoje</p>
+                <Plus />
               </li>
               <li>
                 <p>Comece a aprender ainda hoje</p>
+                <Plus />
               </li>
               <li>
                 <p>Comece a aprender ainda hoje</p>
+                <Plus />
               </li>
               <li>
                 <p>Comece a aprender ainda hoje</p>
+                <Plus />
               </li>
             </ul>
           </div>
@@ -46,7 +67,10 @@ export default function Section7Perguntas() {
             <Swiper
               modules={[Autoplay]}
               spaceBetween="10%"
-              slidesPerView={1.7}
+              slidesPerView={
+                (windowWidth > 1000 && 1.7) ||
+                (windowWidth > 0 && windowWidth <= 1000 && 1)
+              }
               pagination={{ clickable: true }}
               loop={true}
             >
@@ -54,11 +78,21 @@ export default function Section7Perguntas() {
                 <div className={styles.card}>
                   <div className={styles.dataCard}>
                     <h1>Primeiros passos na fitoterapia</h1>
-                    <div className={styles.iconBook}></div>
+                    <div className={styles.iconBook}>
+                      <img src={Book} alt="Icone Livro" />
+                    </div>
                     <ul>
-                      <li>Totalmente online</li>
-                      <li>Leitura facil e didatico</li>
-                      <li>Resultado pro resto da vida</li>
+                      <li>
+                        <Ok /> Totalmente online
+                      </li>
+                      <li>
+                        <Ok />
+                        Leitura facil e didatico
+                      </li>
+                      <li>
+                        <Ok />
+                        Resultado pro resto da vida
+                      </li>
                     </ul>
                     <div className={styles.preco}>
                       <p>

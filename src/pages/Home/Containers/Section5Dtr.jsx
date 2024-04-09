@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Section5Dtr.module.css";
 
-import image from "../../../assets/imgs/home/Section5Image.webp";
+import image from "../../../assets/imgs/home/section5Image.webp";
 
 export default function Section5Dtr() {
   return (

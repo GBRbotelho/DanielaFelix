@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Section5Dtr.module.css";
 
+import image from "../../../assets/imgs/home/section5image.webp";
+
 export default function Section5Dtr() {
   return (
     <section className={styles.section}>
@@ -26,7 +28,9 @@ export default function Section5Dtr() {
           </p>
           <button>Agendar Agora</button>
         </div>
-        <div className={styles.image}></div>
+        <div className={styles.image}>
+          <img src={image} alt="Imagem Ilustrativa" />
+        </div>
       </div>
     </section>
   );

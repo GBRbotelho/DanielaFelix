@@ -9,7 +9,7 @@
 .container {
   margin: calc(100px * var(--factor)) 0;
   display: flex;
-  gap: calc(100px * var(--factor));
+  gap: calc(50px * var(--factor));
   align-items: center;
 }
 
@@ -47,6 +47,26 @@
 
 .image {
   height: calc(900px * var(--factor));
-  width: calc(750px * var(--factor));
-  background-color: var(--color2);
+  width: calc(950px * var(--factor));
+}
+
+@media (max-width: 1050px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90vw;
+  }
+
+  .image {
+    height: 90vw;
+    width: 90vw;
+  }
+
+  .content p {
+    width: 90%;
+  }
 }

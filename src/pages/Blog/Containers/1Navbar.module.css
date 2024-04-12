@@ -84,6 +84,8 @@
   top: calc(80px * var(--factor));
   right: calc(0px * var(--factor));
   padding: 10px 0;
+  z-index: 1;
+  background-color: #f4f4f4;
 }
 
 .divMenu ul {

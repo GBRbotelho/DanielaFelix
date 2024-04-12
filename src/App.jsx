@@ -4,6 +4,7 @@ import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Index from "./pages/Home/@Index";
+import Blog from "./pages/Blog/@Index";
 
 function App() {
   useEffect(() => {
@@ -16,6 +17,7 @@ function App() {
   return (
     <Router>
       <Route path="/" element={<Index />} />
+      <Route path="/blog" element={<Blog />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Router>
   );

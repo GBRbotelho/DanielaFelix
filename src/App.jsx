@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Index from "./pages/Home/@Index";
 import Blog from "./pages/Blog/@Index";
+import Parceiros from "./pages/Parceiros/@Index";
 
 function App() {
   useEffect(() => {
@@ -18,6 +19,7 @@ function App() {
     <Router>
       <Route path="/" element={<Index />} />
       <Route path="/blog" element={<Blog />} />
+      <Route path="/parceiros" element={<Parceiros />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Router>
   );

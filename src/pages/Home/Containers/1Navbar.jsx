@@ -24,7 +24,9 @@ export default function Navbar() {
             <li>Blog</li>
           </Link>
           <li>Alunos</li>
-          <li>Parceiros</li>
+          <Link to={"/parceiros"}>
+            <li>Parceiros</li>
+          </Link>
         </ul>
         <button>Consulta</button>
       </nav>
@@ -49,7 +51,9 @@ export default function Navbar() {
               <li>Blog</li>
             </Link>
             <li>Alunos</li>
-            <li>Parceiros</li>
+            <Link to={"/parceiros"}>
+              <li>Parceiros</li>
+            </Link>
           </ul>
           <button>Consulta</button>
         </div>

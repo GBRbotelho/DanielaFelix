@@ -30,7 +30,10 @@ export default function Navbar() {
       </nav>
       <nav className={styles.navMobile}>
         <button
-          onClick={() => setDropdownOpen(!isDropdownOpen)}
+          onClick={() => {
+            console.log("Clicou");
+            setDropdownOpen(!isDropdownOpen);
+          }}
           className={styles.hamburger}
         >
           {!isDropdownOpen ? <Hamburger /> : <Close />}

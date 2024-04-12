@@ -117,6 +117,7 @@
 
 .hamburger svg {
   width: calc(70px * var(--factor));
+  color: var(--color1);
 }
 
 .active {

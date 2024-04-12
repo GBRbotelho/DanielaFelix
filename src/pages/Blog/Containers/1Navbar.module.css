@@ -116,6 +116,7 @@
 }
 
 .hamburger svg {
+  color: var(--color2);
   width: calc(70px * var(--factor));
 }
 

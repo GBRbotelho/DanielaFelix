@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Section1.module.css";
+import image from "../../../assets/imgs/blog/section1.webp";
 
 export default function Section1() {
   return (
@@ -16,7 +17,10 @@ export default function Section1() {
           </p>
           <button>Ver tudo</button>
         </div>
-        <div className={styles.image}></div>
+        <div className={styles.image}>
+          <img src={image} alt="Imagem Doutora" />
+          <div className={styles.detalhe}></div>
+        </div>
       </div>
     </section>
   );

@@ -1,0 +1,62 @@
+.section {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font1);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: calc(200px * var(--factor));
+  margin: calc(120px * var(--factor)) 0;
+}
+
+.content h1 {
+  color: var(--color3);
+  font-size: calc(75px * var(--factor));
+  width: calc(700px * var(--factor));
+  line-height: 1;
+  font-weight: 600;
+}
+
+.content span {
+  color: var(--color5);
+}
+
+.content p {
+  margin-top: calc(10px * var(--factor));
+  font-size: calc(33px * var(--factor));
+  color: var(--color3);
+  width: calc(870px * var(--factor));
+  line-height: 1;
+}
+
+.content button {
+  margin-top: calc(20px * var(--factor));
+  background-color: var(--color5);
+  color: var(--color2);
+  font-weight: 700;
+  font-size: calc(32px * var(--factor));
+  padding: calc(10px * var(--factor)) calc(30px * var(--factor));
+  border-radius: calc(5px * var(--factor));
+  display: flex;
+  gap: calc(10px * var(--factor));
+  align-items: center;
+  transition: 0.2s;
+}
+
+.content button:hover {
+  transform: scale(1.1);
+  background-color: var(--color3);
+  color: var(--color5);
+  cursor: pointer;
+}
+
+.image {
+  width: calc(500px * var(--factor));
+  height: calc(500px * var(--factor));
+  background-color: var(--color2);
+  border-radius: calc(36px * var(--factor));
+}

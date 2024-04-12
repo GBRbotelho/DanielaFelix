@@ -3,6 +3,7 @@ import styles from "./1Navbar.module.css";
 import Logo from "../../../assets/imgs/Logo.webp";
 import Hamburger from "../../../components/Navbar/Hamburger";
 import Close from "../../../components/Navbar/Close";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -15,9 +16,13 @@ export default function Navbar() {
       </div>
       <nav className={styles.nav}>
         <ul>
-          <li>Home</li>
+          <Link to={"/"}>
+            <li>Home</li>
+          </Link>
           <li>E-Books</li>
-          <li>Blog</li>
+          <Link to={"/blog"}>
+            <li>Blog</li>
+          </Link>
           <li>Alunos</li>
           <li>Parceiros</li>
         </ul>
@@ -36,9 +41,13 @@ export default function Navbar() {
           }`}
         >
           <ul>
-            <li>Home</li>
+            <Link to={"/"}>
+              <li>Home</li>
+            </Link>
             <li>E-Books</li>
-            <li>Blog</li>
+            <Link to={"/blog"}>
+              <li>Blog</li>
+            </Link>
             <li>Alunos</li>
             <li>Parceiros</li>
           </ul>

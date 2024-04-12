@@ -1,0 +1,94 @@
+.section {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font2);
+  z-index: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  margin: calc(50px * var(--factor));
+}
+
+.content h1 {
+  color: var(--color3);
+  font-size: calc(59px * var(--factor));
+  line-height: 1;
+  font-weight: 600;
+}
+
+.content span {
+  color: var(--color5);
+}
+
+.cards {
+  margin-top: calc(40px * var(--factor));
+  width: calc(1750px * var(--factor));
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: calc(30px * var(--factor));
+  align-items: center;
+  border: calc(4px * var(--factor)) solid var(--color5);
+  border-radius: calc(16px * var(--factor));
+  color: var(--color3);
+}
+
+.image {
+  margin-top: calc(20px * var(--factor));
+  width: calc(180px * var(--factor));
+  height: calc(180px * var(--factor));
+  border-radius: 50%;
+  background-color: var(--color2);
+}
+
+.card p {
+  font-size: calc(24px * var(--factor));
+  width: 75%;
+}
+
+.card button {
+  margin-top: calc(30px * var(--factor));
+  margin-bottom: calc(10px * var(--factor));
+  width: 90%;
+  background-color: var(--color3);
+  font-size: calc(37px * var(--factor));
+  color: var(--color1);
+  font-weight: 600;
+  border-radius: calc(16px * var(--factor));
+  padding: calc(10px * var(--factor)) 0;
+  transition: 0.2s;
+}
+
+.card button:hover {
+  transform: scale(1.05);
+  background-color: var(--color2);
+  color: var(--color5);
+  cursor: pointer;
+}
+
+.first {
+  background-color: var(--color3);
+}
+
+.first p {
+  color: var(--color1);
+}
+
+.first button {
+  color: var(--color2);
+  background-color: var(--color5);
+}
+
+@media (max-width: 1000px) {
+  .cards {
+    display: flex;
+    min-width: 90vw;
+    width: 80vw;
+    max-width: 80vw;
+  }
+}

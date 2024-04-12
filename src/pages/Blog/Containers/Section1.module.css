@@ -5,6 +5,7 @@
   justify-content: center;
   font-family: var(--font1);
   z-index: 0;
+  background-color: #f4f4f4;
 }
 
 .container {

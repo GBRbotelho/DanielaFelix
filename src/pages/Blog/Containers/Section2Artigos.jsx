@@ -5,6 +5,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { Link } from "react-router-dom";
 
 export default function Section2Artigos() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -45,7 +46,9 @@ export default function Section2Artigos() {
                   Bem-vindo ao nosso universo de bem-estar natural! De dicas
                   práticas a informações científicas
                 </p>
-                <button>Ler mais</button>
+                <Link to={"/blog/artigo"}>
+                  <button>Ler mais</button>
+                </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide className={styles.swiperCard}>
@@ -55,7 +58,9 @@ export default function Section2Artigos() {
                   Bem-vindo ao nosso universo de bem-estar natural! De dicas
                   práticas a informações científicas
                 </p>
-                <button>Ler mais</button>
+                <Link to={"/blog/artigo"}>
+                  <button>Ler mais</button>
+                </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide className={styles.swiperCard}>
@@ -65,7 +70,9 @@ export default function Section2Artigos() {
                   Bem-vindo ao nosso universo de bem-estar natural! De dicas
                   práticas a informações científicas
                 </p>
-                <button>Ler mais</button>
+                <Link to={"/blog/artigo"}>
+                  <button>Ler mais</button>
+                </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide className={styles.swiperCard}>
@@ -75,7 +82,9 @@ export default function Section2Artigos() {
                   Bem-vindo ao nosso universo de bem-estar natural! De dicas
                   práticas a informações científicas
                 </p>
-                <button>Ler mais</button>
+                <Link to={"/blog/artigo"}>
+                  <button>Ler mais</button>
+                </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide className={styles.swiperCard}>
@@ -85,7 +94,9 @@ export default function Section2Artigos() {
                   Bem-vindo ao nosso universo de bem-estar natural! De dicas
                   práticas a informações científicas
                 </p>
-                <button>Ler mais</button>
+                <Link to={"/blog/artigo"}>
+                  <button>Ler mais</button>
+                </Link>
               </div>
             </SwiperSlide>
           </Swiper>

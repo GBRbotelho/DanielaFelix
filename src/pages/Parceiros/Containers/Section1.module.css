@@ -5,6 +5,7 @@
   justify-content: center;
   font-family: var(--font2);
   z-index: 0;
+  background-color: #f4f4f4;
 }
 
 .container {
@@ -35,6 +36,7 @@
   grid-template-rows: auto;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-gap: calc(60px * var(--factor));
+  background-color: #f4f4f4;
 }
 
 .card {

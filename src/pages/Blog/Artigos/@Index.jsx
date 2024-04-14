@@ -15,7 +15,7 @@ export default function Index() {
             Como <span>diminuir o estresse</span> por meio das flores
           </h1>
           <p>
-            as margens tranquilas do rio, onde os salgueiros se curvavam
+            Nas margens tranquilas do rio, onde os salgueiros se curvavam
             graciosamente em direção à água, o tempo parecia desacelerar. O sol
             poente pintava o céu com uma paleta de cores vibrantes, refletindo
             sua beleza nas águas serenas. As aves cantavam em harmonia enquanto

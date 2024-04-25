@@ -4,6 +4,9 @@ import styles from "./Section5Dtr.module.css";
 import image from "../../../assets/imgs/home/section5ImagemDoutora.webp";
 
 export default function Section5Dtr() {
+  const href =
+    "https://wa.me/5511981517956?text=Ol%C3%A1%2C+vim+pelo+site+e+gostaria+de+conhecer+mais+sobre+seus+servi%C3%A7os%21";
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -26,7 +29,9 @@ export default function Section5Dtr() {
             começar sua jornada em direção ao bem-estar completo com a Daniela
             Felix Fitoterapia. Sua saúde natural começa aqui e agora.
           </p>
-          <button>Agendar Agora</button>
+          <a href={href} target="_blank">
+            <button>Agendar Agora</button>
+          </a>
         </div>
         <div className={styles.image}>
           <img src={image} alt="Imagem Ilustrativa" />

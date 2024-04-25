@@ -8,6 +8,9 @@ import icon4 from "../../../assets/imgs/home/section3icon4.webp";
 import icon5 from "../../../assets/imgs/home/section3icon5.webp";
 
 export default function Section3Servicos() {
+  const href =
+    "https://wa.me/5511981517956?text=Ol%C3%A1%2C+vim+pelo+site+e+gostaria+de+conhecer+mais+sobre+seus+servi%C3%A7os%21";
+
   return (
     <section className={styles.section}>
       <div className={styles.content}>
@@ -80,7 +83,9 @@ export default function Section3Servicos() {
             </div>
           </div>
         </div>
-        <button>Comece sua Jornada para uma Saúde Natural!</button>
+        <a href={href} target="_blank">
+          <button>Comece sua Jornada para uma Saúde Natural!</button>
+        </a>
       </div>
     </section>
   );

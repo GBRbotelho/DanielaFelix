@@ -4,6 +4,9 @@ import styles from "./Section4Indicado.module.css";
 import image from "../../../assets/imgs/home/section4ImagemPessoas.webp";
 
 export default function Section4Indicado() {
+  const href =
+    "https://wa.me/5511981517956?text=Ol%C3%A1%2C+vim+pelo+site+e+gostaria+de+conhecer+mais+sobre+seus+servi%C3%A7os%21";
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -26,7 +29,9 @@ export default function Section4Indicado() {
             colaterais indesejados. <strong>Experimente a fitoterapia</strong> e
             descubra como ela pode fazer a diferença para você e sua família!
           </p>
-          <button>É isso que eu preciso</button>
+          <a href={href} target="_blank">
+            <button>É isso que eu preciso</button>
+          </a>
         </div>
       </div>
     </section>

@@ -4,6 +4,9 @@ import styles from "./Section2Sobre.module.css";
 import img from "../../../assets/imgs/home/imageSection1.webp";
 
 export default function Section2Sobre() {
+  const href =
+    "https://wa.me/5511981517956?text=Ol%C3%A1%2C+vim+pelo+site+e+gostaria+de+conhecer+mais+sobre+seus+servi%C3%A7os%21";
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -25,7 +28,9 @@ export default function Section2Sobre() {
             <strong>Seja Bem-Vindo</strong> à Sua Própria História de
             Transformação e Bem-Estar.
           </p>
-          <button>Agendar uma consulta</button>
+          <a href={href} target="_blank">
+            <button>Agendar uma consulta</button>
+          </a>
         </div>
         <div className={styles.image}>
           <img src={img} alt="Ilustração" />

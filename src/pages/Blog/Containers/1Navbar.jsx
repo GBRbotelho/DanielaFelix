@@ -19,11 +19,15 @@ export default function Navbar() {
           <Link to={"/"}>
             <li>Home</li>
           </Link>
-          <li>E-Books</li>
+          <Link to={"/?scrollTo=ebook"}>
+            <li>E-Books</li>
+          </Link>
           <Link to={"/blog"}>
             <li>Blog</li>
           </Link>
-          <li>Alunos</li>
+          <Link to={"/?scrollTo=clientes"}>
+            <li>Clientes</li>
+          </Link>
           <Link to={"/parceiros"}>
             <li>Parceiros</li>
           </Link>
@@ -49,11 +53,15 @@ export default function Navbar() {
             <Link to={"/"}>
               <li>Home</li>
             </Link>
-            <li>E-Books</li>
+            <Link to={"/?scrollTo=ebook"}>
+              <li>E-Books</li>
+            </Link>
             <Link to={"/blog"}>
               <li>Blog</li>
             </Link>
-            <li>Alunos</li>
+            <Link to={"/?scrollTo=clientes"}>
+              <li>Clientes</li>
+            </Link>
             <Link to={"/parceiros"}>
               <li>Parceiros</li>
             </Link>

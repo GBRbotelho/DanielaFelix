@@ -23,7 +23,7 @@ export default function Section6Pacientes() {
   }, []);
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="clientes">
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.data}>

@@ -62,7 +62,7 @@ export default function Section7Perguntas() {
             </ul>
           </div>
         </div>
-        <div className={styles.ebook}>
+        <div className={styles.ebook} id="ebook">
           <div className={styles.cards}>
             <Swiper
               modules={[Autoplay]}

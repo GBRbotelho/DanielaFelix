@@ -17,14 +17,6 @@ export default function Navbar() {
     }
   };
 
-  useEffect(() => {
-    // Verifica se há um parâmetro na URL indicando que a rolagem até a seção do eBook deve ser acionada
-    const params = new URLSearchParams(location.search);
-    if (params.get("scrollTo")) {
-      scrollToSection(params.get("scrollTo"));
-    }
-  }, [location.search]);
-
   return (
     <header className={styles.header}>
       <div className={styles.logo}>

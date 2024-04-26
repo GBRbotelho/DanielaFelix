@@ -40,7 +40,6 @@
 
 .cards {
   width: calc(1250px * var(--factor));
-  height: calc(450px * var(--factor));
 }
 
 .card {
@@ -68,9 +67,10 @@
 }
 
 .profile {
-  min-width: calc(70px * var(--factor));
-  min-height: calc(70px * var(--factor));
-  max-height: calc(70px * var(--factor));
+  min-width: calc(60px * var(--factor));
+  min-height: calc(60px * var(--factor));
+  height: calc(60px * var(--factor));
+  max-height: calc(60px * var(--factor));
   border-radius: 50%;
   background-color: var(--color2);
 }

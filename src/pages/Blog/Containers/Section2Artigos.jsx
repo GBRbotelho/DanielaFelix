@@ -43,10 +43,10 @@ export default function Section2Artigos() {
               <div className={`${styles.card} ${styles.first}`}>
                 <div className={styles.image}></div>
                 <p>
-                  Bem-vindo ao nosso universo de bem-estar natural! De dicas
-                  práticas a informações científicas
+                  Caminhando Juntos: Explorando o Mundo do Autismo e Terapias
+                  Integrativas
                 </p>
-                <Link to={"/blog/artigo"}>
+                <Link to={"/blog/caminhando-juntos"}>
                   <button>Ler mais</button>
                 </Link>
               </div>
@@ -55,10 +55,9 @@ export default function Section2Artigos() {
               <div className={styles.card}>
                 <div className={styles.image}></div>
                 <p>
-                  Bem-vindo ao nosso universo de bem-estar natural! De dicas
-                  práticas a informações científicas
+                  Desvendando o Autismo: O Caminho da Descoberta e Aceitação
                 </p>
-                <Link to={"/blog/artigo"}>
+                <Link to={"/blog/desvendando-o-autismo"}>
                   <button>Ler mais</button>
                 </Link>
               </div>
@@ -67,10 +66,10 @@ export default function Section2Artigos() {
               <div className={styles.card}>
                 <div className={styles.image}></div>
                 <p>
-                  Bem-vindo ao nosso universo de bem-estar natural! De dicas
-                  práticas a informações científicas
+                  Sussurros Noturnos: A Importância da Rotina do Sono no Autismo
+                  e o Papel da Fitoterapia
                 </p>
-                <Link to={"/blog/artigo"}>
+                <Link to={"/blog/sussurros-noturnos"}>
                   <button>Ler mais</button>
                 </Link>
               </div>
@@ -79,22 +78,10 @@ export default function Section2Artigos() {
               <div className={styles.card}>
                 <div className={styles.image}></div>
                 <p>
-                  Bem-vindo ao nosso universo de bem-estar natural! De dicas
-                  práticas a informações científicas
+                  Explorando os Aromas da Serenidade: O Papel da Aromaterapia no
+                  Cuidado com o Autismo
                 </p>
-                <Link to={"/blog/artigo"}>
-                  <button>Ler mais</button>
-                </Link>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiperCard}>
-              <div className={styles.card}>
-                <div className={styles.image}></div>
-                <p>
-                  Bem-vindo ao nosso universo de bem-estar natural! De dicas
-                  práticas a informações científicas
-                </p>
-                <Link to={"/blog/artigo"}>
+                <Link to={"/blog/explorando-os-aromas-da-serenidade"}>
                   <button>Ler mais</button>
                 </Link>
               </div>

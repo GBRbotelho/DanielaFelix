@@ -11,6 +11,10 @@ import "aos/dist/aos.css";
 import Index from "./pages/Home/@Index";
 import Blog from "./pages/Blog/@Index";
 import Artigo from "./pages/Blog/Artigos/@Index";
+import Artigo1 from "./pages/Blog/Artigos/pages/Artigo1/@Index";
+import Artigo2 from "./pages/Blog/Artigos/pages/Artigo2/@Index";
+import Artigo3 from "./pages/Blog/Artigos/pages/Artigo3/@Index";
+import Artigo4 from "./pages/Blog/Artigos/pages/Artigo4/@Index";
 import Parceiros from "./pages/Parceiros/@Index";
 
 function App() {
@@ -32,6 +36,13 @@ function App() {
       <Route path="/" element={<Index />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/artigo" element={<Artigo />} />
+      <Route path="/blog/caminhando-juntos" element={<Artigo1 />} />
+      <Route path="/blog/desvendando-o-autismo" element={<Artigo2 />} />
+      <Route path="/blog/sussurros-noturnos" element={<Artigo3 />} />
+      <Route
+        path="/blog/explorando-os-aromas-da-serenidade"
+        element={<Artigo4 />}
+      />
       <Route path="/parceiros" element={<Parceiros />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Router>

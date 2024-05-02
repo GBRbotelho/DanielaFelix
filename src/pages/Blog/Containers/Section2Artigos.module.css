@@ -31,6 +31,8 @@
 .card {
   display: flex;
   flex-direction: column;
+  height: calc(500px * var(--factor));
+  justify-content: space-between;
   gap: calc(30px * var(--factor));
   align-items: center;
   border: calc(4px * var(--factor)) solid var(--color5);

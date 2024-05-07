@@ -10,7 +10,7 @@ import Plus from "../../../components/Home/Plus";
 import Book from "../../../assets/imgs/home/section7iconBook.webp";
 import Ok from "../../../components/Home/Ok";
 
-import pdf from "../../../assets/docs/cartaz.pdf";
+import pdf from "../../../assets/docs/Amostra Grátis - GUIA Como usar 30 plantas ocidentais da Medicina Chinesa.pdf";
 
 export default function Section7Perguntas() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -19,7 +19,8 @@ export default function Section7Perguntas() {
     // Cria um link temporário para iniciar o download
     const downloadLink = document.createElement("a");
     downloadLink.href = pdf;
-    downloadLink.download = "Ebook Gratuito.pdf";
+    downloadLink.download =
+      "Amostra Grátis - GUIA Como usar 30 plantas ocidentais da Medicina Chinesa.pdf";
 
     // Adiciona o link temporário ao documento e clica nele
     document.body.appendChild(downloadLink);

@@ -10,8 +10,24 @@ import Plus from "../../../components/Home/Plus";
 import Book from "../../../assets/imgs/home/section7iconBook.webp";
 import Ok from "../../../components/Home/Ok";
 
+import pdf from "../../../assets/docs/cartaz.pdf";
+
 export default function Section7Perguntas() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const handleDownload = () => {
+    // Cria um link temporário para iniciar o download
+    const downloadLink = document.createElement("a");
+    downloadLink.href = pdf;
+    downloadLink.download = "Ebook Gratuito.pdf";
+
+    // Adiciona o link temporário ao documento e clica nele
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+
+    // Remove o link temporário do documento
+    document.body.removeChild(downloadLink);
+  };
 
   const handleWindowResize = () => {
     setWindowWidth(window.innerWidth);
@@ -103,7 +119,7 @@ export default function Section7Perguntas() {
                       </p>
                     </div>
                   </div>
-                  <button>Quero ter meu acesso</button>
+                  <button onClick={handleDownload}>Quero ter meu acesso</button>
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.swiperCard}>

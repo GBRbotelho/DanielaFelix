@@ -3,13 +3,13 @@ import styles from "./Section1.module.css";
 import Geo from "../../../components/Parceiros/Geo";
 import Profile from "../../../components/Parceiros/Profile";
 
-export default function Section1() {
+export default function Section2() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.content}>
           <h1>
-            Nossos <span>parceiros</span>
+            Gosto e <span>recomendo</span>
           </h1>
         </div>
         <div className={styles.cards}>
@@ -18,14 +18,14 @@ export default function Section1() {
             <ul>
               <li>
                 <Profile />
-                Epic Saúde
+                Fatcat Beer
               </li>
               <li>
                 <Geo />
-                Hortolândia - SP
+                Cássia dos Coqueiros - SP
               </li>
             </ul>
-            <a href="http://peliasfil.wixsite.com/acupuntura" target="_blank">
+            <a href="https://fatcatbeer.com.br/links" target="_blank">
               <button>Conhecer</button>
             </a>
           </div>
@@ -34,14 +34,14 @@ export default function Section1() {
             <ul>
               <li>
                 <Profile />
-                Instituto Potala
+                Leve Summer
               </li>
               <li>
                 <Geo />
-                Indaiatuba - SP
+                Loja Online
               </li>
             </ul>
-            <a href="http://www.institutopotala.com/" target="_blank">
+            <a href="https://wa.me/5561994252335" target="_blank">
               <button>Conhecer</button>
             </a>
           </div>
@@ -50,14 +50,14 @@ export default function Section1() {
             <ul>
               <li>
                 <Profile />
-                Comunidade Fênix
+                JC Comunicação Visual
               </li>
               <li>
                 <Geo />
-                Hortolândia - SP
+                São Paulo - SP
               </li>
             </ul>
-            <a href="http://go.hotmart.com/X86080020K" target="_blank">
+            <a href="https://wa.me/5511940242315" target="_blank">
               <button>Conhecer</button>
             </a>
           </div>
@@ -66,30 +66,14 @@ export default function Section1() {
             <ul>
               <li>
                 <Profile />
-                Beija Flor Aromas
+                Jõao do Barro
               </li>
               <li>
-                <Geo /> Hortolândia - SP
-              </li>
-            </ul>
-            <a href="https://beijafloraromas.com/" target="_blank">
-              <button>Conhecer</button>
-            </a>
-          </div>
-          <div className={styles.card}>
-            <div className={styles.image}></div>
-            <ul>
-              <li>
-                <Profile />
-                CP Clin
-              </li>
-              <li>
-                <Geo />
-                Hortolândia - SP
+                <Geo />- SP
               </li>
             </ul>
             <a
-              href="https://www.instagram.com/cp_clin_aluguel_consultorios/"
+              href="https://www.instagram.com/loja_joaodobarro/"
               target="_blank"
             >
               <button>Conhecer</button>
@@ -100,14 +84,14 @@ export default function Section1() {
             <ul>
               <li>
                 <Profile />
-                BioFarma
+                Doces da Nessa
               </li>
               <li>
                 <Geo />
                 Hortolândia - SP
               </li>
             </ul>
-            <a href="https://wa.me/5519994020059" target="_blank">
+            <a href="https://linklist.bio/Docesdanessa" target="_blank">
               <button>Conhecer</button>
             </a>
           </div>
@@ -116,14 +100,14 @@ export default function Section1() {
             <ul>
               <li>
                 <Profile />
-                Passiflora Hortolândia
+                Ki-Bão Burguer
               </li>
               <li>
                 <Geo />
                 Hortolândia - SP
               </li>
             </ul>
-            <a href="https://www.farmaciapassiflora.com.br/" target="_blank">
+            <a href="https://www.instagram.com/kibaoburguer" target="_blank">
               <button>Conhecer</button>
             </a>
           </div>
@@ -132,14 +116,14 @@ export default function Section1() {
             <ul>
               <li>
                 <Profile />
-                Thay MKT
+                Café Tellure
               </li>
               <li>
                 <Geo />
                 Hortolândia - SP
               </li>
             </ul>
-            <a href="https://bio.site/thay.MKT" target="_blank">
+            <a href="https://www.instagram.com/cafetellure/" target="_blank">
               <button>Conhecer</button>
             </a>
           </div>
@@ -148,14 +132,30 @@ export default function Section1() {
             <ul>
               <li>
                 <Profile />
-                TV Interação
+                Divina Flora
               </li>
               <li>
                 <Geo />
-                Morumbi - SP
+                Hortolândia - SP
               </li>
             </ul>
-            <a href="http://www.interacao.com.br/" target="_blank">
+            <a href="https://wa.me/5549999497765" target="_blank">
+              <button>Conhecer</button>
+            </a>
+          </div>
+          <div className={styles.card}>
+            <div className={styles.image}></div>
+            <ul>
+              <li>
+                <Profile />
+                Editora Inserir
+              </li>
+              <li>
+                <Geo />
+                Hortolândia - SP
+              </li>
+            </ul>
+            <a href="https://www.instagram.com/editorainserir" target="_blank">
               <button>Conhecer</button>
             </a>
           </div>

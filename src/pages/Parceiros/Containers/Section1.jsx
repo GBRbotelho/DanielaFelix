@@ -3,6 +3,16 @@ import styles from "./Section1.module.css";
 import Geo from "../../../components/Parceiros/Geo";
 import Profile from "../../../components/Parceiros/Profile";
 
+import img1 from "../../../assets/imgs/fotos parceiros/EPICSAUDE-hortolandia.webp";
+import img2 from "../../../assets/imgs/fotos parceiros/INSTITUTO-CULTURAL-POTALA-indaiatuba.webp";
+import img3 from "../../../assets/imgs/fotos parceiros/COMUNIDADE-FENIX-hortolandia.webp";
+import img4 from "../../../assets/imgs/fotos parceiros/BEIJA FLOR AROMAS florianopolis.webp";
+import img5 from "../../../assets/imgs/fotos parceiros/CP-CLIN-Medicina-e-Saúde-hortolandia.webp";
+import img6 from "../../../assets/imgs/fotos parceiros/BIOFARMA-hortolandia.webp";
+import img7 from "../../../assets/imgs/fotos parceiros/PASSIFLORA-HORTOLÂNDIA.webp";
+import img8 from "../../../assets/imgs/fotos parceiros/THAY MKT hortolandia.webp";
+import img9 from "../../../assets/imgs/fotos parceiros/TV INTERAÇÃO São Paulo.webp";
+
 export default function Section1() {
   return (
     <section className={styles.section}>
@@ -14,7 +24,9 @@ export default function Section1() {
         </div>
         <div className={styles.cards}>
           <div className={styles.card}>
-            <div className={styles.image}></div>
+            <div className={styles.image}>
+              <img src={img1} alt="EPIC SAUDE" />
+            </div>
             <ul>
               <li>
                 <Profile />
@@ -30,7 +42,9 @@ export default function Section1() {
             </a>
           </div>
           <div className={styles.card}>
-            <div className={styles.image}></div>
+            <div className={styles.image}>
+              <img src={img2} alt="Instituto Potala" />
+            </div>
             <ul>
               <li>
                 <Profile />
@@ -46,7 +60,9 @@ export default function Section1() {
             </a>
           </div>
           <div className={styles.card}>
-            <div className={styles.image}></div>
+            <div className={styles.image}>
+              <img src={img3} alt="Comunidade Fênix" />
+            </div>
             <ul>
               <li>
                 <Profile />
@@ -62,7 +78,9 @@ export default function Section1() {
             </a>
           </div>
           <div className={styles.card}>
-            <div className={styles.image}></div>
+            <div className={styles.image}>
+              <img src={img4} alt="Beija Flor Aromas" />
+            </div>
             <ul>
               <li>
                 <Profile />
@@ -77,7 +95,9 @@ export default function Section1() {
             </a>
           </div>
           <div className={styles.card}>
-            <div className={styles.image}></div>
+            <div className={styles.image}>
+              <img src={img5} alt="CP Clin" />
+            </div>
             <ul>
               <li>
                 <Profile />
@@ -96,7 +116,9 @@ export default function Section1() {
             </a>
           </div>
           <div className={styles.card}>
-            <div className={styles.image}></div>
+            <div className={styles.image}>
+              <img src={img6} alt="BioFarma" />
+            </div>
             <ul>
               <li>
                 <Profile />
@@ -112,7 +134,9 @@ export default function Section1() {
             </a>
           </div>
           <div className={styles.card}>
-            <div className={styles.image}></div>
+            <div className={styles.image}>
+              <img src={img7} alt="Passiflora" />
+            </div>
             <ul>
               <li>
                 <Profile />
@@ -128,7 +152,9 @@ export default function Section1() {
             </a>
           </div>
           <div className={styles.card}>
-            <div className={styles.image}></div>
+            <div className={styles.image}>
+              <img src={img8} alt="Thay MKT" />
+            </div>
             <ul>
               <li>
                 <Profile />
@@ -144,7 +170,9 @@ export default function Section1() {
             </a>
           </div>
           <div className={styles.card}>
-            <div className={styles.image}></div>
+            <div className={styles.image}>
+              <img src={img9} alt="TV Interação" />
+            </div>
             <ul>
               <li>
                 <Profile />

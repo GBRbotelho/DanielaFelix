@@ -1,7 +1,11 @@
 import React from "react";
 import styles from "./@Index.module.css";
 import Navbar from "../../../Containers/1Navbar";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+import img from "../../../../../assets/imgs/fotos artigos/3.webp";
+import img2 from "../../../../../assets/imgs/fotos artigos/1.webp";
+import img3 from "../../../../../assets/imgs/fotos artigos/2.webp";
+import img4 from "../../../../../assets/imgs/fotos artigos/4.webp";
 
 export default function Index() {
   const navigate = useNavigate();
@@ -60,6 +64,7 @@ export default function Index() {
         </section>
         <aside>
           <div className={styles.image}>
+            <img src={img} alt="Imagem Artigo" />
             <div className={styles.detalhe}></div>
           </div>
           <div className={styles.title}>
@@ -67,33 +72,44 @@ export default function Index() {
           </div>
           <div className={styles.recomendacoes}>
             <div className={styles.recomendacao}>
-              <div className={styles.imageRec}></div>
+              <div className={styles.imageRec}>
+                <img src={img2} alt="Imagem Artigo" />
+              </div>
               <div className={styles.contentRec}>
                 <p>
-                  Bem-vindo ao nosso universo de bem-estar natural! De dicas
-                  práticas a informações científicas
+                  Caminhando Juntos: Explorando o Mundo do Autismo e Terapias
+                  Integrativas
                 </p>
-                <button>Ler mais</button>
+                <Link to={"/blog/caminhando-juntos"}>
+                  <button>Ler mais</button>
+                </Link>
               </div>
             </div>
             <div className={styles.recomendacao}>
-              <div className={styles.imageRec}></div>
+              <div className={styles.imageRec}>
+                <img src={img3} alt="Imagem Artigo" />
+              </div>
               <div className={styles.contentRec}>
                 <p>
-                  Bem-vindo ao nosso universo de bem-estar natural! De dicas
-                  práticas a informações científicas
+                  Desvendando o Autismo: O Caminho da Descoberta e Aceitação
                 </p>
-                <button>Ler mais</button>
+                <Link to={"/blog/desvendando-o-autismo"}>
+                  <button>Ler mais</button>
+                </Link>
               </div>
             </div>
             <div className={styles.recomendacao}>
-              <div className={styles.imageRec}></div>
+              <div className={styles.imageRec}>
+                <img src={img4} alt="Imagem Artigo" />
+              </div>
               <div className={styles.contentRec}>
                 <p>
-                  Bem-vindo ao nosso universo de bem-estar natural! De dicas
-                  práticas a informações científicas
+                  Explorando os Aromas da Serenidade: O Papel da Aromaterapia no
+                  Cuidado com o Autismo
                 </p>
-                <button>Ler mais</button>
+                <Link to={"/blog/explorando-os-aromas-da-serenidade"}>
+                  <button>Ler mais</button>
+                </Link>
               </div>
             </div>
           </div>

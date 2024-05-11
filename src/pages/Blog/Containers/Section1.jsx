@@ -15,7 +15,6 @@ export default function Section1() {
             a informações científicas, oferecemos um guia completo sobre o uso
             de plantas medicinais para melhorar sua qualidade de vida.
           </p>
-          <button>Ver tudo</button>
         </div>
         <div className={styles.image}>
           <img src={image} alt="Imagem Doutora" />

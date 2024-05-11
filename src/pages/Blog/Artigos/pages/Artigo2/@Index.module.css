@@ -80,6 +80,10 @@
   position: relative;
 }
 
+.image img {
+  border-radius: calc(36px * var(--factor));
+}
+
 .detalhe {
   position: absolute;
   width: calc(500px * var(--factor));
@@ -117,6 +121,10 @@
   min-width: calc(150px * var(--factor));
   height: calc(150px * var(--factor));
   background-color: var(--color2);
+  border-radius: 50%;
+}
+
+.imageRec img {
   border-radius: 50%;
 }
 

@@ -38,6 +38,7 @@
   border: calc(4px * var(--factor)) solid var(--color5);
   border-radius: calc(16px * var(--factor));
   color: var(--color3);
+  transition: 0.1s;
 }
 
 .image {
@@ -48,9 +49,14 @@
   background-color: var(--color2);
 }
 
+.image img {
+  border-radius: 50%;
+}
+
 .card p {
   font-size: calc(24px * var(--factor));
   width: 75%;
+  transition: 0.1s;
 }
 
 .card button {
@@ -63,7 +69,7 @@
   font-weight: 600;
   border-radius: calc(16px * var(--factor));
   padding: calc(10px * var(--factor)) 0;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 .card a {
@@ -73,24 +79,25 @@
   justify-content: center;
 }
 
+.card:hover {
+  background-color: var(--color3);
+  cursor: pointer;
+}
+
+.card:hover p {
+  color: var(--color1);
+}
+
+.card:hover button {
+  color: var(--color2);
+  background-color: var(--color5);
+}
+
 .card button:hover {
   transform: scale(1.05);
   background-color: var(--color2);
   color: var(--color5);
   cursor: pointer;
-}
-
-.first {
-  background-color: var(--color3);
-}
-
-.first p {
-  color: var(--color1);
-}
-
-.first button {
-  color: var(--color2);
-  background-color: var(--color5);
 }
 
 @media (max-width: 1000px) {

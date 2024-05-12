@@ -145,7 +145,7 @@ export default function Section7Perguntas() {
                     </ul>
                     <div className={styles.preco}>
                       <p>
-                        De <del>89,99</del>
+                        De <del>93,00</del>
                       </p>
                       <p>
                         Por <span>73,00</span>

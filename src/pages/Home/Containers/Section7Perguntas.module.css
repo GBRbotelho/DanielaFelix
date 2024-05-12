@@ -91,7 +91,7 @@
 
 .card {
   width: 100%;
-  height: calc(700px * var(--factor));
+  height: calc(750px * var(--factor));
   border: 0px solid;
   border-top: calc(20px * var(--factor)) solid var(--color6);
   display: flex;
@@ -102,9 +102,11 @@
 }
 
 .dataCard {
+  height: 100%;
   display: flex;
   margin-top: calc(30px * var(--factor));
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   gap: calc(20px * var(--factor));
 }
@@ -164,6 +166,7 @@
   background-color: #6eb122;
   padding: calc(20px * var(--factor)) 0;
   transition: 0.2s;
+  width: 100%;
 }
 
 .card button:hover {

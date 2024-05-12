@@ -124,7 +124,80 @@ export default function Section7Perguntas() {
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.swiperCard}>
-                <div className={styles.card}></div>
+                <div className={styles.card}>
+                  <div className={styles.dataCard}>
+                    <h1>Fitoterapia e Plantas no Cuidado Feminino</h1>
+                    <div className={styles.iconBook}>
+                      <img src={Book} alt="Icone Livro" />
+                    </div>
+                    <ul>
+                      <li>
+                        <Ok /> Totalmente online
+                      </li>
+                      <li>
+                        <Ok />
+                        Leitura facil e didatico
+                      </li>
+                      <li>
+                        <Ok />
+                        Resultado pro resto da vida
+                      </li>
+                    </ul>
+                    <div className={styles.preco}>
+                      <p>
+                        De <del>89,99</del>
+                      </p>
+                      <p>
+                        Por <span>73,00</span>
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    href="https://pay.hotmart.com/Y39809741M?checkoutMode=10&bid=1714243149035"
+                    target="_blank"
+                  >
+                    <button>Quero ter meu acesso</button>
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperCard}>
+                <div className={styles.card}>
+                  <div className={styles.dataCard}>
+                    <h1>Como usar 30 plantas ocidentais na Medicina Chinesa</h1>
+                    <div className={styles.iconBook}>
+                      <img src={Book} alt="Icone Livro" />
+                    </div>
+                    <ul>
+                      <li>
+                        <Ok /> Totalmente online
+                      </li>
+                      <li>
+                        <Ok />
+                        Leitura facil e didatico
+                      </li>
+                      <li>
+                        <Ok />
+                        Resultado pro resto da vida
+                      </li>
+                    </ul>
+                    <div className={styles.preco}>
+                      <p>
+                        De <del>89,90</del>
+                      </p>
+                      <p>
+                        Por <span>69,90</span>
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    href="https://pay.hotmart.com/Y39809741M?checkoutMode=10&bid=1714243149035"
+                    target="_blank"
+                  >
+                    <button onClick={handleDownload}>
+                      Quero ter meu acesso
+                    </button>
+                  </a>
+                </div>
               </SwiperSlide>
             </Swiper>
           </div>

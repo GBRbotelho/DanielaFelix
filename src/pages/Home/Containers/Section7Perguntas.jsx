@@ -53,27 +53,22 @@ export default function Section7Perguntas() {
             <h1>Perguntas frequentes</h1>
             <ul>
               <li>
-                <p>Comece a aprender ainda hoje</p>
+                <p>As consultas possuem pagamentos mensais ou avulsos?</p>
                 <Plus />
               </li>
               <li>
-                <p>Comece a aprender ainda hoje</p>
+                <p>Quais são as formas de pagamento?</p>
                 <Plus />
               </li>
               <li>
-                <p>Comece a aprender ainda hoje</p>
+                <p>
+                  Posso mudar a modalidade das consultas presenciais ou online a
+                  qualquer momento?
+                </p>
                 <Plus />
               </li>
               <li>
-                <p>Comece a aprender ainda hoje</p>
-                <Plus />
-              </li>
-              <li>
-                <p>Comece a aprender ainda hoje</p>
-                <Plus />
-              </li>
-              <li>
-                <p>Comece a aprender ainda hoje</p>
+                <p>Pode ser feito mais de um serviço em uma sessão?</p>
                 <Plus />
               </li>
             </ul>

@@ -64,6 +64,10 @@
   position: relative;
 }
 
+.image img {
+  border-radius: calc(35px * var(--factor));
+}
+
 .detalhe {
   position: absolute;
   width: calc(500px * var(--factor));

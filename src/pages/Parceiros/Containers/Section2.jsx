@@ -35,7 +35,7 @@ export default function Section2() {
               </li>
               <li>
                 <Geo />
-                Cássia dos Coqueiros - SP
+                Cássia dos Coqueiros <br />- SP
               </li>
             </ul>
             <a href="https://fatcatbeer.com.br/links" target="_blank">

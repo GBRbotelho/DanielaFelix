@@ -52,6 +52,10 @@
   background-color: var(--color3);
 }
 
+.image img {
+  border-radius: calc(16px * var(--factor));
+}
+
 .card ul {
   display: flex;
   flex-direction: column;

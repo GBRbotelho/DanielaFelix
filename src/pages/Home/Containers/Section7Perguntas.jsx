@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Section7Perguntas.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import "swiper/css/navigation";
 import Plus from "../../../components/Home/Plus";
 
 import Book from "../../../assets/imgs/home/section7iconBook.webp";
@@ -193,13 +194,14 @@ export default function Section7Perguntas() {
         <div className={styles.ebook} id="ebook">
           <div className={styles.cards}>
             <Swiper
-              modules={[Autoplay]}
+              modules={[Autoplay, Pagination, Navigation]}
               spaceBetween="10%"
               slidesPerView={
                 (windowWidth > 1000 && 1.7) ||
                 (windowWidth > 0 && windowWidth <= 1000 && 1)
               }
               pagination={{ clickable: true }}
+              navigation={true}
               loop={true}
             >
               <SwiperSlide className={styles.swiperCard}>

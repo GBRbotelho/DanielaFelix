@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Section6Pacientes.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import "swiper/css/navigation";
 
 import Star from "../../../components/Home/Star";
 import profile from "../../../assets/imgs/home/section6ImageProfile.webp";
@@ -43,7 +44,7 @@ export default function Section6Pacientes() {
           </div>
           <div className={styles.cards}>
             <Swiper
-              modules={[Autoplay]}
+              modules={[Autoplay, Pagination, Navigation]}
               spaceBetween="2%"
               slidesPerView={
                 (windowWidth > 700 && 3) ||
@@ -52,6 +53,7 @@ export default function Section6Pacientes() {
               }
               pagination={{ clickable: true }}
               loop={true}
+              navigation={true}
             >
               <SwiperSlide className={styles.swiperCard}>
                 <div className={styles.card}>

@@ -1,3 +1,7 @@
+:root {
+  --swiper-theme-color: #285e40;
+}
+
 html {
   --color1: #ffffff;
   --color2: #285e40;

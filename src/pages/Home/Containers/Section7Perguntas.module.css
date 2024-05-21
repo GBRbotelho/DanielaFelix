@@ -41,6 +41,8 @@
 .perguntas {
   display: flex;
   flex-direction: column;
+  height: calc(550px * var(--factor));
+  overflow-y: scroll;
 }
 
 .perguntas h1 {
@@ -55,6 +57,15 @@
 
 .perguntas li {
   background-color: #f4f4f4;
+  width: calc(600px * var(--factor));
+  padding: calc(15px * var(--factor)) calc(10px * var(--factor));
+  border-radius: calc(8px * var(--factor));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questao {
   width: calc(600px * var(--factor));
   padding: calc(15px * var(--factor)) calc(10px * var(--factor));
   border-radius: calc(8px * var(--factor));
@@ -78,6 +89,25 @@
 
 .perguntas p {
   font-size: calc(27px * var(--factor));
+}
+
+.resposta {
+  display: none;
+  padding: calc(15px * var(--factor)) calc(10px * var(--factor));
+  border-radius: calc(8px * var(--factor));
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.resposta p {
+  font-size: calc(20px * var(--factor));
+  width: 95%;
+  text-align: justify;
+}
+
+.visivel {
+  display: flex;
 }
 
 .ebook {

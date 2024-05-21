@@ -14,6 +14,7 @@ import pdf from "../../../assets/docs/Amostra Grátis - GUIA Como usar 30 planta
 
 export default function Section7Perguntas() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [question, setQuestion] = useState(null);
 
   const handleDownload = () => {
     // Cria um link temporário para iniciar o download
@@ -39,6 +40,14 @@ export default function Section7Perguntas() {
     window.addEventListener("resize", handleWindowResize);
   }, []);
 
+  const handleClick = (number) => {
+    if (question === number) {
+      setQuestion(null);
+    } else {
+      setQuestion(number);
+    }
+  };
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -53,23 +62,130 @@ export default function Section7Perguntas() {
             <h1>Perguntas frequentes</h1>
             <ul>
               <li>
-                <p>As consultas possuem pagamentos mensais ou avulsos?</p>
-                <Plus />
+                <div className={styles.questao}>
+                  <p>As consultas possuem pagamentos mensais ou avulsos?</p>
+                  <Plus click={() => handleClick(1)} />
+                </div>
+                <div
+                  className={`${styles.resposta} ${
+                    question === 1 ? styles.visivel : ""
+                  } `}
+                >
+                  <p>
+                    As consultas possuem pagamentos avulsos com retorno em 15
+                    dias (via WhatsApp para ajuste de dosagem, se for o caso) e
+                    retorno para avaliação de resultados em 35 a 40 dias (com
+                    novo pagamento).
+                  </p>
+                </div>
               </li>
               <li>
-                <p>Quais são as formas de pagamento?</p>
-                <Plus />
+                <div className={styles.questao}>
+                  <p>Quais são as formas de pagamento?</p>
+                  <Plus click={() => handleClick(2)} />
+                </div>
+                <div
+                  className={`${styles.resposta} ${
+                    question === 2 ? styles.visivel : ""
+                  } `}
+                >
+                  <p>
+                    Pix, Dinheiro, Débito e Crédito a vista (sem taxa) ou em 2x
+                    com taxa.
+                  </p>
+                </div>
               </li>
               <li>
-                <p>
-                  Posso mudar a modalidade das consultas presenciais ou online a
-                  qualquer momento?
-                </p>
-                <Plus />
+                <div className={styles.questao}>
+                  <p>
+                    Posso mudar a modalidade das consultas presenciais ou online
+                    a qualquer momento?
+                  </p>
+                  <Plus click={() => handleClick(3)} />
+                </div>
+                <div
+                  className={`${styles.resposta} ${
+                    question === 3 ? styles.visivel : ""
+                  } `}
+                >
+                  <p>
+                    Estando na cidade de Hortolândia e em breve em Americana
+                    sim. Sendo da cidade de Indaiatuba consulte os dias de
+                    atendimento no Instituto Potala. As demais cidades somente
+                    online.
+                  </p>
+                </div>
               </li>
               <li>
-                <p>Pode ser feito mais de um serviço em uma sessão?</p>
-                <Plus />
+                <div className={styles.questao}>
+                  <p>Pode ser feito mais de um serviço em uma sessão?</p>
+                  <Plus click={() => handleClick(4)} />
+                </div>
+                <div
+                  className={`${styles.resposta} ${
+                    question === 4 ? styles.visivel : ""
+                  } `}
+                >
+                  <p>
+                    Durante a consulta seja online ou presencial serão
+                    utilizadas as técnicas necessárias para o melhor
+                    restabelecimento da saúde do interagente. Seja Fitoterapia
+                    Ocidental ou Chinesa, Aromaterapia, Florais de Bach e/ou
+                    Homeopatia. E em alguns casos utilizamos a associação entre
+                    as técnicas.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div className={styles.questao}>
+                  <p>
+                    Como a Fitoterapia pode auxiliar no restabelecimento da
+                    minha saúde ou da minha família?
+                  </p>
+                  <Plus click={() => handleClick(5)} />
+                </div>
+                <div
+                  className={`${styles.resposta} ${
+                    question === 5 ? styles.visivel : ""
+                  } `}
+                >
+                  <p>
+                    A Fitoterapia oferece uma abordagem natural e eficaz para o
+                    restabelecimento da saúde de você e sua família. Por meio do
+                    uso de plantas medicinais e fitoterápicos, a Fitoterapia
+                    atua no organismo de forma holística, auxiliando no
+                    tratamento de diversas condições de saúde, desde problemas
+                    digestivos até distúrbios do sono. Além disso, os
+                    fitoterápicos podem ser utilizados de forma preventiva,
+                    fortalecendo o sistema imunológico e promovendo um estilo de
+                    vida mais saudável. Agende uma consulta com a Dra. Daniela e
+                    descubra como a Fitoterapia pode ser um aliado poderoso para
+                    o bem-estar de toda a família.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div className={styles.questao}>
+                  <p>Qual a faixa etária para o atendimento com as PICS?</p>
+                  <Plus click={() => handleClick(6)} />
+                </div>
+                <div
+                  className={`${styles.resposta} ${
+                    question === 6 ? styles.visivel : ""
+                  } `}
+                >
+                  <p>
+                    As Práticas Integrativas e Complementares em Saúde (PICS)
+                    são acessíveis e benéficas para todas as faixas etárias,
+                    desde bebês até idosos. Não há restrição específica de idade
+                    para o atendimento com PICS, pois essas terapias visam
+                    promover o equilíbrio e o bem-estar de forma holística em
+                    qualquer fase da vida. Portanto, crianças, adolescentes,
+                    adultos e idosos podem se beneficiar do cuidado integrativo
+                    oferecido pelas PICS, sob orientação de profissionais
+                    qualificados como a Dra. Daniela.
+                  </p>
+                </div>
               </li>
             </ul>
           </div>

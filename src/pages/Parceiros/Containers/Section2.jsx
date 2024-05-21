@@ -88,7 +88,8 @@ export default function Section2() {
                 Jõao do Barro
               </li>
               <li>
-                <Geo />- SP
+                <Geo />
+                Prudentópolis – PR
               </li>
             </ul>
             <a
@@ -163,7 +164,7 @@ export default function Section2() {
               </li>
               <li>
                 <Geo />
-                Hortolândia - SP
+                Chapeco – SC
               </li>
             </ul>
             <a href="https://wa.me/5549999497765" target="_blank">
@@ -181,7 +182,7 @@ export default function Section2() {
               </li>
               <li>
                 <Geo />
-                Hortolândia - SP
+                São Paulo – SP
               </li>
             </ul>
             <a href="https://www.instagram.com/editorainserir" target="_blank">

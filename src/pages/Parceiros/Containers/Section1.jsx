@@ -87,7 +87,7 @@ export default function Section1() {
                 Beija Flor Aromas
               </li>
               <li>
-                <Geo /> Hortolândia - SP
+                <Geo /> Florianópolis – SC
               </li>
             </ul>
             <a href="https://beijafloraromas.com/" target="_blank">
@@ -180,7 +180,7 @@ export default function Section1() {
               </li>
               <li>
                 <Geo />
-                Morumbi - SP
+                Hortolândia – SP
               </li>
             </ul>
             <a href="http://www.interacao.com.br/" target="_blank">

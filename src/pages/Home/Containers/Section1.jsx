@@ -13,8 +13,9 @@ export default function Section1() {
           <span>Melhore sua Saúde</span>: Consultas de Fitoterapia e outras PICS
         </h1>
         <p>
-          Explore o Poder das Plantas e da Acupuntura Auricular para Transformar
-          sua Saúde e Bem-Estar, onde quer que você esteja!
+          Explore o Poder das Plantas e das Práticas Integrativas e
+          Complementares em Saúde para transformar sua Saúde e Bem-Estar, onde
+          quer que você esteja!
         </p>
         <a href={href} target="_blank">
           <button>

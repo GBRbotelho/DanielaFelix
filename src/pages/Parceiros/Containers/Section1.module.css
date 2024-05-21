@@ -46,8 +46,8 @@
 }
 
 .image {
-  width: calc(400px * var(--factor));
-  height: calc(266px * var(--factor));
+  width: calc(350px * var(--factor));
+  height: calc(230px * var(--factor));
   border-radius: calc(16px * var(--factor));
   background-color: var(--color3);
 }

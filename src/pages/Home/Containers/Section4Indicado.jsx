@@ -23,11 +23,11 @@ export default function Section4Indicado() {
             está presente em todos os momentos da vida, desde o nascimento até a
             idade avançada. As plantas medicinais oferecem uma{" "}
             <strong>alternativa natural e segura</strong> para cuidar da saúde.
-            Elas
-            <strong>aliviam</strong> desconfortos, <strong>fortalecem</strong> a
-            imunidade e promovem o <strong>bem-estar</strong>, sem efeitos
-            colaterais indesejados. <strong>Experimente a fitoterapia</strong> e
-            descubra como ela pode fazer a diferença para você e sua família!
+            Elas <strong>aliviam</strong> desconfortos,{" "}
+            <strong>fortalecem</strong> a imunidade e promovem o{" "}
+            <strong>bem-estar</strong>, sem efeitos colaterais indesejados.{" "}
+            <strong>Experimente a fitoterapia</strong> e descubra como ela pode
+            fazer a diferença para você e sua família!
           </p>
           <a href={href} target="_blank">
             <button>É isso que eu preciso</button>

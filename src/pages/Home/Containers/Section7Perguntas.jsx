@@ -89,7 +89,10 @@ export default function Section7Perguntas() {
               <SwiperSlide className={styles.swiperCard}>
                 <div className={styles.card}>
                   <div className={styles.dataCard}>
-                    <h1>Primeiros passos na fitoterapia</h1>
+                    <h1>
+                      Como usar 30 plantas ocidentais na Medicina Chinesa -
+                      Amostra Gratis
+                    </h1>
                     <div className={styles.iconBook}>
                       <img src={Book} alt="Icone Livro" />
                     </div>
@@ -185,12 +188,10 @@ export default function Section7Perguntas() {
                     </div>
                   </div>
                   <a
-                    href="https://pay.hotmart.com/Y39809741M?checkoutMode=10&bid=1714243149035"
+                    href="https://pay.hotmart.com/S48950640C?off=zr1dht5o&bid=1714243206322"
                     target="_blank"
                   >
-                    <button onClick={handleDownload}>
-                      Quero ter meu acesso
-                    </button>
+                    <button>Quero ter meu acesso</button>
                   </a>
                 </div>
               </SwiperSlide>

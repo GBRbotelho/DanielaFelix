@@ -15,6 +15,8 @@ import Artigo1 from "./pages/Blog/Artigos/pages/Artigo1/@Index";
 import Artigo2 from "./pages/Blog/Artigos/pages/Artigo2/@Index";
 import Artigo3 from "./pages/Blog/Artigos/pages/Artigo3/@Index";
 import Artigo4 from "./pages/Blog/Artigos/pages/Artigo4/@Index";
+import Artigo5 from "./pages/Blog/Artigos/pages/Artigo5/@Index";
+import Artigo6 from "./pages/Blog/Artigos/pages/Artigo6/@Index";
 import Parceiros from "./pages/Parceiros/@Index";
 
 function App() {
@@ -43,6 +45,8 @@ function App() {
         path="/blog/explorando-os-aromas-da-serenidade"
         element={<Artigo4 />}
       />
+      <Route path="/blog/18-de-maio" element={<Artigo5 />} />
+      <Route path="/blog/o-papel-vital-do-farmaceutico" element={<Artigo6 />} />
       <Route path="/parceiros" element={<Parceiros />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Router>

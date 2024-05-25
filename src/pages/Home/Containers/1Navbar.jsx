@@ -8,6 +8,8 @@ import { useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const href =
+    "https://wa.me/5511981517956?text=Ol%C3%A1%2C+vim+pelo+site+e+gostaria+de+conhecer+mais+sobre+seus+servi%C3%A7os%21";
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -37,7 +39,9 @@ export default function Navbar() {
             <li>Parceiros</li>
           </Link>
         </ul>
-        <button>Consulta</button>
+        <a href={href} target="_blank">
+          <button>Consulta</button>
+        </a>
       </nav>
       <nav className={styles.navMobile}>
         <button
@@ -64,7 +68,9 @@ export default function Navbar() {
               <li>Parceiros</li>
             </Link>
           </ul>
-          <button>Consulta</button>
+          <a href={href} target="_blank">
+            <button>Consulta</button>
+          </a>
         </div>
       </nav>
     </header>

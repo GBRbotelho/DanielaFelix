@@ -75,10 +75,10 @@
 }
 
 .perguntas li svg {
-  width: calc(27px * var(--factor));
-  height: calc(27px * var(--factor));
-  min-width: calc(27px * var(--factor));
-  min-height: calc(27px * var(--factor));
+  width: calc(45px * var(--factor));
+  height: calc(45px * var(--factor));
+  min-width: calc(45px * var(--factor));
+  min-height: calc(45px * var(--factor));
   transition: 0.2s;
 }
 

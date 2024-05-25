@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Section2Artigos.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
@@ -11,6 +11,8 @@ import img1 from "../../../assets/imgs/fotos artigos/1.webp";
 import img2 from "../../../assets/imgs/fotos artigos/2.webp";
 import img3 from "../../../assets/imgs/fotos artigos/3.webp";
 import img4 from "../../../assets/imgs/fotos artigos/4.webp";
+import img5 from "../../../assets/imgs/fotos artigos/5.webp";
+import img6 from "../../../assets/imgs/fotos artigos/6.webp";
 
 export default function Section2Artigos() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -33,7 +35,8 @@ export default function Section2Artigos() {
         </div>
         <div className={styles.cards}>
           <Swiper
-            modules={[Autoplay]}
+            modules={[Autoplay, Navigation, Pagination]}
+            navigation
             spaceBetween="2%"
             slidesPerView={
               (windowWidth > 1000 && 4) ||
@@ -44,6 +47,31 @@ export default function Section2Artigos() {
             pagination={{ clickable: true }}
             loop={true}
           >
+            <SwiperSlide className={styles.swiperCard}>
+              <div className={`${styles.card} ${styles.first}`}>
+                <div className={styles.image}>
+                  <img src={img6} alt="Caminhando Juntos" />
+                </div>
+                <p>
+                  O Papel Vital do Farmacêutico e da Atenção Farmacêutica no
+                  Cuidado em Saúde Mental
+                </p>
+                <Link to={"/blog/o-papel-vital-do-farmaceutico"}>
+                  <button>Ler mais</button>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className={styles.swiperCard}>
+              <div className={`${styles.card} ${styles.first}`}>
+                <div className={styles.image}>
+                  <img src={img5} alt="Caminhando Juntos" />
+                </div>
+                <p>18 de Maio: Unindo Forças na Luta Antimanicomial</p>
+                <Link to={"/blog/18-de-maio"}>
+                  <button>Ler mais</button>
+                </Link>
+              </div>
+            </SwiperSlide>
             <SwiperSlide className={styles.swiperCard}>
               <div className={`${styles.card} ${styles.first}`}>
                 <div className={styles.image}>

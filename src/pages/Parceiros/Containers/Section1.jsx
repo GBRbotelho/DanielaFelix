@@ -12,6 +12,7 @@ import img6 from "../../../assets/imgs/fotos parceiros/BIOFARMA-hortolandia.webp
 import img7 from "../../../assets/imgs/fotos parceiros/PASSIFLORA-HORTOLÂNDIA.webp";
 import img8 from "../../../assets/imgs/fotos parceiros/THAY MKT hortolandia.webp";
 import img9 from "../../../assets/imgs/fotos parceiros/TV INTERAÇÃO São Paulo.webp";
+import img10 from "../../../assets/imgs/fotos parceiros/dracarolfranco.webp";
 
 export default function Section1() {
   return (
@@ -184,6 +185,24 @@ export default function Section1() {
               </li>
             </ul>
             <a href="http://www.interacao.com.br/" target="_blank">
+              <button>Conhecer</button>
+            </a>
+          </div>
+          <div className={styles.card}>
+            <div className={styles.image}>
+              <img src={img10} alt="Welfare Clinic Saúde e Estética " />
+            </div>
+            <ul>
+              <li>
+                <Profile />
+                Welfare Clinic
+              </li>
+              <li>
+                <Geo />
+                Hortolândia - SP
+              </li>
+            </ul>
+            <a href="https://dracarolfranco.com/" target="_blank">
               <button>Conhecer</button>
             </a>
           </div>

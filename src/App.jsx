@@ -17,6 +17,7 @@ import Artigo3 from "./pages/Blog/Artigos/pages/Artigo3/@Index";
 import Artigo4 from "./pages/Blog/Artigos/pages/Artigo4/@Index";
 import Artigo5 from "./pages/Blog/Artigos/pages/Artigo5/@Index";
 import Artigo6 from "./pages/Blog/Artigos/pages/Artigo6/@Index";
+import Artigo7 from "./pages/Blog/Artigos/pages/Artigo7/@Index";
 import Parceiros from "./pages/Parceiros/@Index";
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
       />
       <Route path="/blog/18-de-maio" element={<Artigo5 />} />
       <Route path="/blog/o-papel-vital-do-farmaceutico" element={<Artigo6 />} />
+      <Route path="/blog/daniela-felix" element={<Artigo7 />} />
       <Route path="/parceiros" element={<Parceiros />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Router>

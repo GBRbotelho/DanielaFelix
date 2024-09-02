@@ -13,6 +13,7 @@ import img3 from "../../../assets/imgs/fotos artigos/3.webp";
 import img4 from "../../../assets/imgs/fotos artigos/4.webp";
 import img5 from "../../../assets/imgs/fotos artigos/5.webp";
 import img6 from "../../../assets/imgs/fotos artigos/6.webp";
+import img7 from "../../../assets/imgs/fotos artigos/7.webp";
 
 export default function Section2Artigos() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -47,6 +48,19 @@ export default function Section2Artigos() {
             pagination={{ clickable: true }}
             loop={true}
           >
+            <SwiperSlide className={styles.swiperCard}>
+              <div className={`${styles.card} ${styles.first}`}>
+                <div className={styles.image}>
+                  <img src={img7} alt="Caminhando Juntos" />
+                </div>
+                <p>
+                Daniela Felix: Uma Vida Dedicada à Fitoterapia e ao Amor pela Natureza
+                </p>
+                <Link to={"/blog/daniela-felix"}>
+                  <button>Ler mais</button>
+                </Link>
+              </div>
+            </SwiperSlide>
             <SwiperSlide className={styles.swiperCard}>
               <div className={`${styles.card} ${styles.first}`}>
                 <div className={styles.image}>

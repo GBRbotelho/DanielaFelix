@@ -14,6 +14,7 @@ import img4 from "../../../assets/imgs/fotos artigos/4.webp";
 import img5 from "../../../assets/imgs/fotos artigos/5.webp";
 import img6 from "../../../assets/imgs/fotos artigos/6.webp";
 import img7 from "../../../assets/imgs/fotos artigos/7.webp";
+import img8 from "../../../assets/imgs/fotos artigos/8.webp";
 
 export default function Section2Artigos() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -51,10 +52,25 @@ export default function Section2Artigos() {
             <SwiperSlide className={styles.swiperCard}>
               <div className={`${styles.card} ${styles.first}`}>
                 <div className={styles.image}>
+                  <img src={img8} alt="Caminhando Juntos" />
+                </div>
+                <p>
+                  Setembro Amarelo: Prevenção ao Suicídio e o Papel das PICS e
+                  do CAPS no Cuidado Integral
+                </p>
+                <Link to={"/blog/setembro-amarelo"}>
+                  <button>Ler mais</button>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className={styles.swiperCard}>
+              <div className={`${styles.card} ${styles.first}`}>
+                <div className={styles.image}>
                   <img src={img7} alt="Caminhando Juntos" />
                 </div>
                 <p>
-                Daniela Felix: Uma Vida Dedicada à Fitoterapia e ao Amor pela Natureza
+                  Daniela Felix: Uma Vida Dedicada à Fitoterapia e ao Amor pela
+                  Natureza
                 </p>
                 <Link to={"/blog/daniela-felix"}>
                   <button>Ler mais</button>

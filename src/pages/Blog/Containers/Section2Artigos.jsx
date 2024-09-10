@@ -16,6 +16,7 @@ import img6 from "../../../assets/imgs/fotos artigos/6.webp";
 import img7 from "../../../assets/imgs/fotos artigos/7.webp";
 import img8 from "../../../assets/imgs/fotos artigos/8.webp";
 import img9 from "../../../assets/imgs/fotos artigos/9.webp";
+import img10 from "../../../assets/imgs/fotos artigos/10.webp";
 
 export default function Section2Artigos() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -51,7 +52,21 @@ export default function Section2Artigos() {
             loop={true}
           >
             <SwiperSlide className={styles.swiperCard}>
-              <div className={`${styles.card} ${styles.first}`}>
+              <div className={`${styles.card}`}>
+                <div className={styles.image}>
+                  <img src={img10} alt="Caminhando Juntos" />
+                </div>
+                <p>
+                  Reconheça os Sinais e Busque Ajuda: O Papel do CAPS na
+                  Prevenção ao Suicídio
+                </p>
+                <Link to={"/blog/reconheca-os-sinais"}>
+                  <button>Ler mais</button>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className={styles.swiperCard}>
+              <div className={`${styles.card}`}>
                 <div className={styles.image}>
                   <img src={img9} alt="Caminhando Juntos" />
                 </div>

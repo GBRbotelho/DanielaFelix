@@ -15,6 +15,7 @@ import img5 from "../../../assets/imgs/fotos artigos/5.webp";
 import img6 from "../../../assets/imgs/fotos artigos/6.webp";
 import img7 from "../../../assets/imgs/fotos artigos/7.webp";
 import img8 from "../../../assets/imgs/fotos artigos/8.webp";
+import img9 from "../../../assets/imgs/fotos artigos/9.webp";
 
 export default function Section2Artigos() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -52,6 +53,20 @@ export default function Section2Artigos() {
             <SwiperSlide className={styles.swiperCard}>
               <div className={`${styles.card} ${styles.first}`}>
                 <div className={styles.image}>
+                  <img src={img9} alt="Caminhando Juntos" />
+                </div>
+                <p>
+                  Casearia Sylvestris (Guaçatonga): Um Tesouro da Natureza com
+                  Potencial Medicinal
+                </p>
+                <Link to={"/blog/casearia-sylvestris"}>
+                  <button>Ler mais</button>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className={styles.swiperCard}>
+              <div className={`${styles.card}`}>
+                <div className={styles.image}>
                   <img src={img8} alt="Caminhando Juntos" />
                 </div>
                 <p>
@@ -64,7 +79,7 @@ export default function Section2Artigos() {
               </div>
             </SwiperSlide>
             <SwiperSlide className={styles.swiperCard}>
-              <div className={`${styles.card} ${styles.first}`}>
+              <div className={`${styles.card}`}>
                 <div className={styles.image}>
                   <img src={img7} alt="Caminhando Juntos" />
                 </div>
@@ -78,7 +93,7 @@ export default function Section2Artigos() {
               </div>
             </SwiperSlide>
             <SwiperSlide className={styles.swiperCard}>
-              <div className={`${styles.card} ${styles.first}`}>
+              <div className={`${styles.card}`}>
                 <div className={styles.image}>
                   <img src={img6} alt="Caminhando Juntos" />
                 </div>
@@ -92,7 +107,7 @@ export default function Section2Artigos() {
               </div>
             </SwiperSlide>
             <SwiperSlide className={styles.swiperCard}>
-              <div className={`${styles.card} ${styles.first}`}>
+              <div className={`${styles.card}`}>
                 <div className={styles.image}>
                   <img src={img5} alt="Caminhando Juntos" />
                 </div>
@@ -103,7 +118,7 @@ export default function Section2Artigos() {
               </div>
             </SwiperSlide>
             <SwiperSlide className={styles.swiperCard}>
-              <div className={`${styles.card} ${styles.first}`}>
+              <div className={`${styles.card}`}>
                 <div className={styles.image}>
                   <img src={img1} alt="Caminhando Juntos" />
                 </div>

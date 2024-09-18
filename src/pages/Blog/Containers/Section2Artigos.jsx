@@ -17,6 +17,7 @@ import img7 from "../../../assets/imgs/fotos artigos/7.webp";
 import img8 from "../../../assets/imgs/fotos artigos/8.webp";
 import img9 from "../../../assets/imgs/fotos artigos/9.webp";
 import img10 from "../../../assets/imgs/fotos artigos/10.webp";
+import img11 from "../../../assets/imgs/fotos artigos/11.webp";
 
 export default function Section2Artigos() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -51,6 +52,20 @@ export default function Section2Artigos() {
             pagination={{ clickable: true }}
             loop={true}
           >
+            <SwiperSlide className={styles.swiperCard}>
+              <div className={`${styles.card}`}>
+                <div className={styles.image}>
+                  <img src={img11} alt="Caminhando Juntos" />
+                </div>
+                <p>
+                  Atenção aos Sinais: Prevenção ao Suicídio em Crianças e
+                  Adolescentes e o Papel do CAPS Infantil
+                </p>
+                <Link to={"/blog/atencao-aos-sinais"}>
+                  <button>Ler mais</button>
+                </Link>
+              </div>
+            </SwiperSlide>
             <SwiperSlide className={styles.swiperCard}>
               <div className={`${styles.card}`}>
                 <div className={styles.image}>

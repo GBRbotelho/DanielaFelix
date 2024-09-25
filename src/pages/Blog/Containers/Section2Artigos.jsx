@@ -18,6 +18,7 @@ import img8 from "../../../assets/imgs/fotos artigos/8.webp";
 import img9 from "../../../assets/imgs/fotos artigos/9.webp";
 import img10 from "../../../assets/imgs/fotos artigos/10.webp";
 import img11 from "../../../assets/imgs/fotos artigos/11.webp";
+import img12 from "../../../assets/imgs/fotos artigos/12.webp";
 
 export default function Section2Artigos() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -52,6 +53,20 @@ export default function Section2Artigos() {
             pagination={{ clickable: true }}
             loop={true}
           >
+            <SwiperSlide className={styles.swiperCard}>
+              <div className={`${styles.card}`}>
+                <div className={styles.image}>
+                  <img src={img12} alt="Caminhando Juntos" />
+                </div>
+                <p>
+                  Plantas Medicinais como Aliadas no Tratamento da Ansiedade e
+                  Depressão
+                </p>
+                <Link to={"/blog/plantas-medicinais"}>
+                  <button>Ler mais</button>
+                </Link>
+              </div>
+            </SwiperSlide>
             <SwiperSlide className={styles.swiperCard}>
               <div className={`${styles.card}`}>
                 <div className={styles.image}>

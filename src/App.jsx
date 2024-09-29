@@ -23,6 +23,7 @@ import Artigo9 from "./pages/Blog/Artigos/pages/Artigo9/@Index";
 import Artigo10 from "./pages/Blog/Artigos/pages/Artigo10/@Index";
 import Artigo11 from "./pages/Blog/Artigos/pages/Artigo11/@Index";
 import Artigo12 from "./pages/Blog/Artigos/pages/Artigo12/@Index";
+import Artigo13 from "./pages/Blog/Artigos/pages/Artigo13/@Index";
 import Parceiros from "./pages/Parceiros/@Index";
 
 function App() {
@@ -59,6 +60,7 @@ function App() {
       <Route path="/blog/reconheca-os-sinais" element={<Artigo10 />} />
       <Route path="/blog/atencao-aos-sinais" element={<Artigo11 />} />
       <Route path="/blog/plantas-medicinais" element={<Artigo12 />} />
+      <Route path="/blog/unha-de-gato" element={<Artigo13 />} />
       <Route path="/parceiros" element={<Parceiros />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Router>

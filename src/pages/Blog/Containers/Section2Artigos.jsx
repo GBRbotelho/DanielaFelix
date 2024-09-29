@@ -19,6 +19,7 @@ import img9 from "../../../assets/imgs/fotos artigos/9.webp";
 import img10 from "../../../assets/imgs/fotos artigos/10.webp";
 import img11 from "../../../assets/imgs/fotos artigos/11.webp";
 import img12 from "../../../assets/imgs/fotos artigos/12.webp";
+import img13 from "../../../assets/imgs/fotos artigos/13.webp";
 
 export default function Section2Artigos() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -53,6 +54,20 @@ export default function Section2Artigos() {
             pagination={{ clickable: true }}
             loop={true}
           >
+            <SwiperSlide className={styles.swiperCard}>
+              <div className={`${styles.card}`}>
+                <div className={styles.image}>
+                  <img src={img13} alt="Caminhando Juntos" />
+                </div>
+                <p>
+                  Unha de Gato (Uncaria tomentosa): Um Tesouro da Fitoterapia
+                  para a Saúde Integral
+                </p>
+                <Link to={"/blog/unha-de-gato"}>
+                  <button>Ler mais</button>
+                </Link>
+              </div>
+            </SwiperSlide>
             <SwiperSlide className={styles.swiperCard}>
               <div className={`${styles.card}`}>
                 <div className={styles.image}>
